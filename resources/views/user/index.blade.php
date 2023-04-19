@@ -21,7 +21,6 @@
         </div>
       </div>
     </div>
-
   <main role="main" class="container">
     <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
       <img class="mr-3" src="{{ asset('assets') }}/img/logo/baznas-tuba.png" alt="" width="55" height="55">
@@ -119,12 +118,63 @@
             <input type="text" class="form-control" id="name" name="name">
           </div>
          <div class="form-group mt-3">
-            <label for="name">Email</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" id="email" name="email">
           </div>
          <div class="form-group mt-3">
-            <label for="name">No Tlp</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <label for="no_tlp">No Tlp</label>
+            <input type="number" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat permohonan menjadi pimpinan BAZNAS Kab. Tuba</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan di tandatangai diatas matrai Rp. 10.000 (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Foto kopi kartu tanda penduduk</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Daftar riwayat hidup atau biodata diri, bertanggal, bulan, tahun dan ditandatangani (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat keterangan sehat jasmanidan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat keterangan bebas narkoba yang dikeluarkan oleh Badan Narkoba Nasional setempat (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, beratnggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, beratanggal, bulan, tahun dan ditandatangani diatas matrai Rp. 10.000 (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Suarat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-3">
+            <label for="no_tlp">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+          </div>
+         <div class="form-group mt-4">
+            <button class="btn btn-primary btn-block">KIRIM</button>
           </div>
       </form>
     </div>
