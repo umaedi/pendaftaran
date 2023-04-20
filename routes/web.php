@@ -16,3 +16,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('user.index');
 });
+
+Route::controller(\App\Http\Controllers\UserController::class)->group(function () {
+    Route::post('/user/store', 'store');
+    Route::get('/pendaftaran/sukses', 'success');
+});

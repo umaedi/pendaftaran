@@ -6,9 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="../../../../favicon.ico">
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+  {{-- <link rel="icon" href="../../../../favicon.ico"> --}}
   <title>Pendaftaran Calon Ketua BAZNAS TUBA</title>
-  <link href="{{ asset('assets') }}/css/bootstrap.min.css" rel="stylesheet">
+  <link href="{{ asset('assets') }}/css/bootstrap.4.3.1.css" rel="stylesheet">
 
   <link href="{{ asset('assets') }}/css/offcanvas.css" rel="stylesheet">
 </head>
@@ -112,83 +113,139 @@
 
     <div class="my-3 p-3 bg-white rounded box-shadow">
       <h6 class="border-bottom border-gray pb-2 mb-0">Formulir Pendaftaran</h6>
-      <form action="">
+      <form id="form_submit">
          <div class="form-group mt-3">
             <label for="name">Nama Lengkap</label>
-            <input type="text" class="form-control" id="name" name="name">
+            <input type="text" class="form-control" id="name" name="nama_pendaftar">
           </div>
          <div class="form-group mt-3">
             <label for="email">Email</label>
             <input type="email" class="form-control" id="email" name="email">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">No Tlp</label>
+            <label for="no_tlp">No Tlp/WhatsApp</label>
             <input type="number" class="form-control" id="no_tlp" name="no_tlp">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat permohonan menjadi pimpinan BAZNAS Kab. Tuba</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_1">Surat permohonan menjadi pimpinan BAZNAS Kab. Tuba</label>
+            <input type="file" class="form-control" id="lampiran_1" name="lampiran_1">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan di tandatangai diatas matrai Rp. 10.000 (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_2">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan di tandatangai diatas matrai Rp. 10.000 (asli)</label>
+            <input type="file" class="form-control" id="lampiran_2" name="lampiran_2">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Foto kopi kartu tanda penduduk</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_3">Foto kopi kartu tanda penduduk</label>
+            <input type="file" class="form-control" id="lampiran_3" name="lampiran_3">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Daftar riwayat hidup atau biodata diri, bertanggal, bulan, tahun dan ditandatangani (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_4">Daftar riwayat hidup atau biodata diri, bertanggal, bulan, tahun dan ditandatangani (asli)</label>
+            <input type="file" class="form-control" id="lampiran_4" name="lampiran_4">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat keterangan sehat jasmanidan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_5">Surat keterangan sehat jasmanidan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
+            <input type="file" class="form-control" id="lampiran_5" name="lampiran_5">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat keterangan bebas narkoba yang dikeluarkan oleh Badan Narkoba Nasional setempat (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_6">Surat keterangan bebas narkoba yang dikeluarkan oleh Badan Narkoba Nasional setempat (asli)</label>
+            <input type="file" class="form-control" id="lampiran_6" name="lampiran_6">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, beratnggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_7">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, beratnggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="lampiran_7" name="lampiran_7">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, beratanggal, bulan, tahun dan ditandatangani diatas matrai Rp. 10.000 (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_8">Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, beratanggal, bulan, tahun dan ditandatangani diatas matrai Rp. 10.000 (asli)</label>
+            <input type="file" class="form-control" id="lampiran_8" name="lampiran_8">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_9">Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</label>
+            <input type="file" class="form-control" id="lampiran_9" name="lampiran_9">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Suarat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_10">Suarat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
+            <input type="file" class="form-control" id="lampiran_10" name="lampiran_10">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_11">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="lampiran_11" name="lampiran_11">
           </div>
          <div class="form-group mt-3">
-            <label for="no_tlp">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-            <input type="file" class="form-control" id="no_tlp" name="no_tlp">
+            <label for="lampiran_12">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="lampiran_12" name="lampiran_12">
           </div>
          <div class="form-group mt-4">
-            <button class="btn btn-primary btn-block">KIRIM</button>
+          @include('layouts._loading_submit')
+            <button id="btn_submit" type="submit" class="btn btn-primary btn-block">KIRIM</button>
           </div>
       </form>
     </div>
   </main>
 
-  <!-- Bootstrap core JavaScript
-    ================================================== -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="{{ asset('assets') }}/js/bootstrap.min.js"></script>
   <script src="{{ asset('assets') }}/js/vendor/holder.min.js"></script>
   <script src="{{ asset('assets') }}/js/offcanvas.js"></script>
+  <script src="{{ asset('assets') }}/js/sweetalert.min.js"></script>
+
+  <script type="text/javascript">
+      async function transAjax(data) {
+          html = null;
+          data.headers = {
+              'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+          }
+          await $.ajax(data).done(function(res) {
+              html = res;
+          })
+              .fail(function() {
+                  return false;
+              })
+          return html
+      }
+
+      $(document).ready(function() {
+      
+          $('#form_submit').submit(async function store(e) {
+                e.preventDefault();
+
+                var form 	= $(this)[0]; 
+                var data 	= new FormData(form);
+
+                var param = {
+                    method: 'POST',
+                    url: '/user/store',
+                    data: data,
+                    processData: false,
+                    contentType: false,
+                    cache: false,
+                }
+
+                    loadingsubmit(true);
+                    await transAjax(param).then((res) => {
+                        swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
+                            loadingsubmit(false);
+                            window.location.href = '/pendaftaran/sukses';
+                        });
+                    }).catch((err) => {
+                        loadingsubmit(false);
+                        console.log('err');
+                        swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
+                        window.location.href = '/';
+                    });
+                });
+
+                function loadingsubmit(state){
+                    if(state) {
+                        $('#btn_loading').removeClass('d-none');
+                        $('#btn_submit').addClass('d-none');
+                    }else {
+                        $('#btn_loading').addClass('d-none');
+                        $('#btn_submit').removeClass('d-none');
+                    }
+                }  
+            });
+        });
+  </script>
 </body>
 
 </html>
