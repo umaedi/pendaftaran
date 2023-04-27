@@ -30,6 +30,7 @@ return new class extends Migration
             $table->string('lampiran_10');
             $table->string('lampiran_11');
             $table->string('lampiran_12');
+            $table->string('status')->default('0');
             $table->timestamps();
         });
     }

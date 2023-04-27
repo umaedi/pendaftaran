@@ -228,7 +228,6 @@
                         });
                     }).catch((err) => {
                         loadingsubmit(false);
-                        console.log('err');
                         swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
                         window.location.href = '/';
                     });

@@ -3,7 +3,7 @@
 <div class="main-content container">
     <section class="section">
       <div class="section-header">
-        <h1>{{ __("Data List Pendaftar") }}</h1>
+        <h1>{{ __("Pendaftar Ditolak") }}</h1>
         <div class="section-header-breadcrumb">
           <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
           <div class="breadcrumb-item">Data List Pendaftar</div>
