@@ -26,56 +26,137 @@
                     </div>
                     <div class="form-group mt-3">
                         <label for="lampiran_1">Surat permohonan menjadi pimpinan BAZNAS Kab. Tuba</label>
-                        <input type="file" class="form-control" id="lampiran_1" name="lampiran_1">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_1) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_2">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan di tandatangai diatas matrai Rp. 10.000 (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_2" name="lampiran_2">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_2) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_3">Foto kopi kartu tanda penduduk</label>
-                        <input type="file" class="form-control" id="lampiran_3" name="lampiran_3">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_3) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_4">Daftar riwayat hidup atau biodata diri, bertanggal, bulan, tahun dan ditandatangani (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_4" name="lampiran_4">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_4) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_5">Surat keterangan sehat jasmanidan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_5" name="lampiran_5">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_5) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_6">Surat keterangan bebas narkoba yang dikeluarkan oleh Badan Narkoba Nasional setempat (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_6" name="lampiran_6">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_6) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_7">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, beratnggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_7" name="lampiran_7">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_7) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_8">Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, beratanggal, bulan, tahun dan ditandatangani diatas matrai Rp. 10.000 (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_8" name="lampiran_8">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_8) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_9">Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</label>
-                        <input type="file" class="form-control" id="lampiran_9" name="lampiran_9">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_9) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_10">Suarat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_10" name="lampiran_10">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_10) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_11">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_11" name="lampiran_11">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_11) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_12">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-                        <input type="file" class="form-control" id="lampiran_12" name="lampiran_12">
+                        <a href="{{ asset('storage/lampiran' . '/' . $pendaftar->lampiran_12) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
+                      <button class="btn btn-success" onclick="konfirmasi({{ $pendaftar->id }})">VERIFIKASI</button>
+                      <button type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModal">TOLAK</button>
                 </div>
             </div>
         </div>
       </div>
     </section>
   </div>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Alasan Penolakan</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="form-group">
+            <textarea name="keterangan" class="form-control keterangan" id="exampleFormControlTextarea1" style="height: 90px"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Batal</button>
+          <button type="submit" id="tolak" class="btn btn-primary">Kirim</button>
+        </div>
+      </div>
+    </div>
+  </div>
 @endsection
+@push('js')
+<script src="{{ asset('assets') }}/js/sweetalert.min.js"></script>
+    <script>
+      function konfirmasi(id) {
+            swal({
+              title: "",
+              text: "Verifikasi berkas ini?",
+              icon: "warning",
+              buttons: true,
+              dangerMode: true,
+              })
+              .then((willDelete) => {
+              if (willDelete) {
+                return new Promise(async function(resolve) {
+                  var param = {
+                          method: 'POST',
+                          url: '/admin/pendaftar/konfirmasi/'+id,
+                      }
+
+                await transAjax(param).then((res) => {
+                        swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
+                            // loadingsubmit(false);
+                            window.location.href = '/admin/pendaftar/terverifikasi';
+                        });
+                    }).catch((err) => {
+                        loadingsubmit(false);
+                        swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
+                        window.location.href = '/admin/pendaftar';
+                    });
+                  });
+                });
+              }
+          });
+        }
+
+        $('#tolak').click(async function tolak(e) {
+          e.preventDefault();
+          var keterangan = $('.keterangan').val();
+          var param = {
+                    method: 'POST',
+                    url: '/admin/pendaftar/tolak/{{ $pendaftar->id }}',
+                    data: {'ketrangan': keterangan}
+                }
+
+                await transAjax(param).then((res) => {
+                    swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
+                        window.location.href = '/admin/dashboard';
+                    });
+                }).catch((err) => {
+                    swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
+                    window.location.href = '/';
+                });
+            });
+          $('#exampleModal').modal('hide');
+        });
+    </script>
+@endpush

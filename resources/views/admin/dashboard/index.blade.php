@@ -53,7 +53,7 @@
                         <a href="{{ route('admin.pendaftar.terverifikasi') }}" style="text-decoration: none">
                         <div class="card-wrap">
                             <div class="card-header">
-                                <h4>{{ __('Total Pendaftar Terverifikasi') }}</h4>
+                                <h4>{{ __('Total Pendaftar Diverifikasi') }}</h4>
                             </div>
                             <div class="card-body">{{ $terverifikasi }}</div>
                         </div>

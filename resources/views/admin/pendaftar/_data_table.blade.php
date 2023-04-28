@@ -6,7 +6,7 @@
         <th scope="col">EMAIL</th>
         <th scope="col">NO TLP</th>
         <th scope="col">TANGGAL</th>
-        <th scope="col">LIHAT</th>
+        <th scope="col">AKSI</th>
     </tr>
     </thead>
     <tbody>
@@ -17,7 +17,7 @@
             <td>{{ $tb->email }}</td>
             <td>{{ $tb->no_tlp }}</td>
             <td>{{ date('d-m-Y', strtotime($tb->created_at)) }}</td>
-            <td class="text-center">Lihat</td>
+            <td class="text-center"><a href="/admin/pendaftar/show/{{ $tb->id }}">Lihat</a></td>
         </tr>
         @empty
         <tr>

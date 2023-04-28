@@ -16,7 +16,7 @@ class DashboardController extends Controller
             return view('admin.dashboard._data_table', $data);
         }
 
-        $data['pendaftar'] = tb_pendaftar::where('status', '0')->count();
+        $data['pendaftar'] = tb_pendaftar::count();
         $data['terverifikasi'] = tb_pendaftar::where('status', '1')->count();
         $data['ditolak'] = tb_pendaftar::where('status', '2')->count();
 

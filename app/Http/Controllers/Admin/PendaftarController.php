@@ -70,4 +70,32 @@ class PendaftarController extends Controller
         $data['pendaftar'] = tb_pendaftar::where('id', $id)->first();
         return view('admin.pendaftar.show', $data);
     }
+
+    public function konfirmasi($id)
+    {
+        $pendaftar = tb_pendaftar::findOrfail($id);
+
+        $pendaftar->update([
+            'status'    => '1'
+        ]);
+
+        return response()->json([
+            'success'   => true,
+            'message'   => 'Berkas berhasil di verifikasi'
+        ]);
+    }
+
+    public function tolak(Request $request, $id)
+    {
+        $pendaftar = tb_pendaftar::findOrfail($id);
+
+        $pendaftar->update([
+            'status'    => '2'
+        ]);
+
+        return response()->json([
+            'success'   => true,
+            'message'   => 'Berkas berhasil ditolak'
+        ]);
+    }
 }

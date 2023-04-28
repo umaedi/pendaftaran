@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/login', [\App\Http\Controllers\Admin\AuthController::class, 'index']);
+Route::get('/login', [\App\Http\Controllers\Admin\AuthController::class, 'index'])->middleware('guest');
 Route::post('/auth/login', [\App\Http\Controllers\Admin\AuthController::class, 'login']);
 
 Route::get('/', function () {
@@ -33,5 +33,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::get('/pendaftar/terverifikasi', 'terverifikasi')->name('admin.pendaftar.terverifikasi');
         Route::get('/pendaftar/ditolak', 'ditolak')->name('admin.pendaftar.ditolak');
         Route::get('/pendaftar/show/{id}', 'show');
+        Route::post('/pendaftar/konfirmasi/{id}', 'konfirmasi');
+        Route::post('/pendaftar/tolak/{id}', 'tolak');
     });
 });
