@@ -56,7 +56,7 @@
 
     function logOut()
     {
-      window.location.href = "{{ url('/muzakki/destroy') }}"
+      window.location.href = "{{ url('/admin/destroy') }}"
     }
     </script>
   @stack('js')

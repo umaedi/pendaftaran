@@ -35,4 +35,15 @@ class AuthController extends Controller
             'message'   => 'Email Atau Password Salah!',
         ], 302);
     }
+
+    public function destroy(Request $request)
+    {
+        Auth::logout();
+        $request->session()->invalidate();
+        $request->session()->regenerateToken();
+        return response()->json([
+            'success'   => true,
+            'message'   => 'Anda berhasil logout'
+        ], 200);
+    }
 }

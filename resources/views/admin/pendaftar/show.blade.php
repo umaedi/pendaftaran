@@ -123,8 +123,8 @@
                       }
 
                 await transAjax(param).then((res) => {
+                  emailVerifikasi('{{ $pendaftar->email }}');
                         swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
-                            // loadingsubmit(false);
                             window.location.href = '/admin/pendaftar/terverifikasi';
                         });
                     }).catch((err) => {
@@ -158,5 +158,22 @@
             });
           $('#exampleModal').modal('hide');
         });
+
+        async function emailVerifikasi(email)
+        {
+          console.log('mengirim email');
+          var param = {
+            method: 'POST',
+            url: '/admin/email/verifikasi',
+            data: {email: email},
+          }
+
+          await transAjax(param).then((res) => {
+            console.log('Email terkirim');
+          }).catch((err) => {
+            console.log('Internal Server Error!');
+          });
+        }
+
     </script>
 @endpush
