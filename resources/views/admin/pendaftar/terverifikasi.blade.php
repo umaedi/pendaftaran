@@ -5,8 +5,8 @@
       <div class="section-header">
         <h1>{{ __("Pendaftar Diverifikasi") }}</h1>
         <div class="section-header-breadcrumb">
-          <div class="breadcrumb-item active"><a href="#">Dashboard</a></div>
-          <div class="breadcrumb-item">Data List Pendaftar</div>
+          <div class="breadcrumb-item active"><a href="/admin/dashboard">Dashboard</a></div>
+          <div class="breadcrumb-item">Pendaftar Diverifikasi</div>
         </div>
       </div>
       <div class="card">
@@ -28,7 +28,7 @@
                         <a href="#" class="form-control btn btn-primary">EXPORT</a>
                     </div>
                   </div>
-
+                  @include('layouts._loading')
                 <div class="table-responsive" id="x-data-table">
                     
                 </div>
@@ -97,13 +97,26 @@
                     paginate: paginate,
                 }
             }
+            loadingsubmit(true);
             await transAjax(param).then((result) => {
+                loadingsubmit(false);
                 $('#x-data-table').html(result)
           
             }).catch((err) => {
+                loadingsubmit(false);
                 console.log('error');
         });
     }
+
+    function loadingsubmit(state){
+        if(state) {
+            $('#btn_loading').removeClass('d-none');
+            $('#btn_login').addClass('d-none');
+        }else {
+            $('#btn_loading').addClass('d-none');
+            $('#btn_login').removeClass('d-none');
+        }
+    }  
 
     function loadPaginate(to) {
         page = to

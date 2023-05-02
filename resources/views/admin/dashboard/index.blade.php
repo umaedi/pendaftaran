@@ -83,6 +83,7 @@
                             <h4>PENDAFTAR PERLU DIKONFIRMASI</h4>
                         </div>
                         <div class="card-body">
+                            @include('layouts._loading')
                             <div class="table-responsive" id="x-data-table">
                     
                             </div>
@@ -134,9 +135,12 @@
                     page: page,
                 }
             }
+            loadingsubmit(true);
             await transAjax(param).then((result) => {
+                loadingsubmit(false);
                 $('#x-data-table').html(result)
             }).catch((err) => {
+                loadingsubmit(false);
                 console.log('Internal Server Error');
             });
         }
@@ -144,6 +148,16 @@
         // setInterval(() => {
         //     loadTable();
         // }, 10000);
+
+        function loadingsubmit(state){
+            if(state) {
+                $('#btn_loading').removeClass('d-none');
+                $('#btn_login').addClass('d-none');
+            }else {
+                $('#btn_loading').addClass('d-none');
+                $('#btn_login').removeClass('d-none');
+            }
+        }  
 
 </script>
 @endpush

@@ -41,9 +41,6 @@ class AuthController extends Controller
         Auth::logout();
         $request->session()->invalidate();
         $request->session()->regenerateToken();
-        return response()->json([
-            'success'   => true,
-            'message'   => 'Anda berhasil logout'
-        ], 200);
+        return redirect('/login');
     }
 }

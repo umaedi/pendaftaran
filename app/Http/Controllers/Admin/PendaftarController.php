@@ -20,7 +20,7 @@ class PendaftarController extends Controller
                 $pendaftar->where('nama_pendaftar', 'like', '%' . \request()->search . '%');
             }
 
-            $data['table'] = $pendaftar->where('status', '0')->paginate($page);
+            $data['table'] = $pendaftar->paginate($page);
 
             return view('admin.dashboard._data_table', $data);
         }

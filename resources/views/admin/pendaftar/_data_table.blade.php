@@ -15,7 +15,7 @@
             <th>1</th>
             <td>{{ $tb->nama_pendaftar }}</td>
             <td>{{ $tb->email }}</td>
-            <td>{{ $tb->no_tlp }}</td>
+            <td><a href="https://api.whatsapp.com/send?phone=62{{ substr($tb->no_tlp, 1) }}">{{ $tb->no_tlp }}</a></td>
             <td>{{ date('d-m-Y', strtotime($tb->created_at)) }}</td>
             <td class="text-center"><a href="/admin/pendaftar/show/{{ $tb->id }}">Lihat</a></td>
         </tr>

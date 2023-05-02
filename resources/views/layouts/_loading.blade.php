@@ -1,1 +1,4 @@
-<h6 class="text-center my-2 d-none" id="loading">Tunggu sebentar ya<span class="animated-dots"></span></h6>
+<div id="btn_loading" class="text-center d-none" type="button">
+    <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+    Tunggu sebentar yah...
+</div>

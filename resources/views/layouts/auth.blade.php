@@ -13,9 +13,6 @@
   <!-- Template CSS -->
   <link rel="stylesheet" href="{{ asset('css') }}/style.css">
 
-  <!-- PWA  -->
-  <link rel="apple-touch-icon" href="{{ asset('/img/icon/lc_icon_xbaznas.png') }}">
-  <link rel="manifest" href="{{ asset('/manifest.json') }}">
   @stack('css')
 </head>
 
@@ -24,15 +21,6 @@
     @yield('content')
   </div>
 </body>
-
-<script src="{{ asset('/sw.js') }}"></script>
-<script>
-    if (!navigator.serviceWorker.controller) {
-        navigator.serviceWorker.register("/sw.js").then(function (reg) {
-            console.log("Service worker has been registered for scope: " + reg.scope);
-        });
-    }
-</script>
 
 <script>
 

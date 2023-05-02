@@ -4,8 +4,9 @@
     <section class="section x-lampiran">
       <div class="section-header">
         <h1>Laporan Tugas Pegawai</h1>
-        <div id="clock" class="ml-auto h5 mt-2 font-weight-bold">
-            <h6>Loading...</h6>
+        <div class="section-header-breadcrumb">
+          <div class="breadcrumb-item active"><a href="/admin/dashboard">Dashboard</a></div>
+          <div class="breadcrumb-item">Detail Pendaftar</div>
         </div>
       </div>
       <div class="row">
