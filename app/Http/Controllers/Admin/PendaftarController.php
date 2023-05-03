@@ -90,7 +90,8 @@ class PendaftarController extends Controller
         $pendaftar = tb_pendaftar::findOrfail($id);
 
         $pendaftar->update([
-            'status'    => '2'
+            'status'    => '2',
+            'keterangan'    => $request->keterangan
         ]);
 
         return response()->json([

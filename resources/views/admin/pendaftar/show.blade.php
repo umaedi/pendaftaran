@@ -145,7 +145,7 @@
           var param = {
                     method: 'POST',
                     url: '/admin/pendaftar/tolak/{{ $pendaftar->id }}',
-                    data: {'ketrangan': keterangan}
+                    data: {keterangan: keterangan}
                 }
 
                 await transAjax(param).then((res) => {
