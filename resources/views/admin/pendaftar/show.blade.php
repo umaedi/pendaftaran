@@ -149,6 +149,7 @@
                 }
 
                 await transAjax(param).then((res) => {
+                  emailPenolakan('{{ $pendaftar->email }}', keterangan);
                     swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
                         window.location.href = '/admin/dashboard';
                     });
@@ -167,6 +168,22 @@
             method: 'POST',
             url: '/admin/email/verifikasi',
             data: {email: email},
+          }
+
+          await transAjax(param).then((res) => {
+            console.log('Email terkirim');
+          }).catch((err) => {
+            console.log('Internal Server Error!');
+          });
+        }
+
+        async function emailPenolakan(email, keterangan)
+        {
+          console.log('mengirim email');
+          var param = {
+            method: 'POST',
+            url: '/admin/email/penolakan',
+            data: {email: email, keterangan: keterangan},
           }
 
           await transAjax(param).then((res) => {
