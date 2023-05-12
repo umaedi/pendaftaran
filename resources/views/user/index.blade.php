@@ -9,7 +9,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
   {{-- <link rel="icon" href="../../../../favicon.ico"> --}}
   <title>Pendaftaran Calon Ketua BAZNAS TUBA</title>
-  <link href="{{ asset('assets') }}/css/bootstrap.4.3.1.css" rel="stylesheet">
+  <link href="{{ asset('assets') }}/css/bootstrap.min.css" rel="stylesheet">
 
   <link href="{{ asset('assets') }}/css/offcanvas.css" rel="stylesheet">
 </head>
@@ -38,18 +38,29 @@
            <div class="card-header" id="headingOne">
              <h5 class="mb-0">
                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                 Ketentuan Umum
+                PERSYARATAN UMUM
                </button>
              </h5>
            </div>
            <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
              <div class="card-body">
                <ul class="list-group">
-                  <li class="list-group-item">1. Penglolan Zakat adalah kegiatan perencanaan, pelaksanaan, dan pengkoordinasian, dalam pengumpulan, pendistribusin, dan pendayagunaan zakat</li>
-                  <li class="list-group-item">2. Badan Amil Zakat Nasional yang selanjutnya disebut BAZNAS adalah lembaga yang melakukan pengelolaan zakat secara nasional</li>
-                  <li class="list-group-item">3. BAZNAS Kabupaten Tulang Bawang adalah lembaga yang melaksanakan tugas dan fungsi BAZNAS di kab. Tulang Bawang.</li>
-                  <li class="list-group-item">4. Pimpinan BAZNAS Kabupaten Tulang Bawang adalah ketua dan oleh wakil ketua BAZNAS Kabupaten Tulang Bawangyang di angkat oleh bupati setelah mendapatkan pertimbangan dari BAZNAS, terdiri dari 1 (satu) orang ketua dan 4 (empat) orang wakil ketua yang berasal dari unsur masyarakat yang meliputi ulama, tenaga profesional dan tokoh msyarakat Islam.</li>
-                  <li class="list-group-item">5. Pantia seleksi adalah panitia yang melaksanakan proses seleksi calon Pimpinan BAZNAS Kabupaten Tulang Bawang.</li>
+                  <li class="list-group-item">1. Warga Negara Indonesia</li>
+                  <li class="list-group-item">2. Beragama Islam</li>
+                  <li class="list-group-item">3. Bertakwa kepada Allah SWT</li>
+                  <li class="list-group-item">4. Berakhlak mulia</li>
+                  <li class="list-group-item">5. Berusia minimal 40 (empat puluh) tahun; (pada saat mendaftar)</li>
+                  <li class="list-group-item">6. Sehat jasmani dan rohani</li>
+                  <li class="list-group-item">7. Tidak menjadi anggota partai politik</li>
+                  <li class="list-group-item">8. Tidak terlibat dalam kegiatan politik praktis</li>
+                  <li class="list-group-item">9. Memiliki kompetensi di bidang pengelolaan zakat</li>
+                  <li class="list-group-item">10. Bersedia untuk bekerja penuh waktu</li>
+                  <li class="list-group-item">11.	Tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan  pidana  penjara  paling singkat 5 (lima) tahun</li>
+                  <li class="list-group-item">12.	Tidak merangkap jabatan  sebagai  pengurus  dan/atau pegawai pengelola zakat lain</li>
+                  <li class="list-group-item">13.	Berasal dari unsur masyarakat yang meliputi ulama, tenaga profesional, dan tokoh masyarakat Islam</li>
+                  <li class="list-group-item">14.	Jika berasal dari pengawai negeri sipil, harus diberhentikan sementara sebagai negeri sipil sesuai ketentuan peraturan perundang-undangan</li>
+                  <li class="list-group-item">15.	Belum pernah menjabat sebagai Pimpinan BAZNAS Provinsi atau BAZNAS Kabupaten/Kota selama 2 (dua) kali masa jabatan (periode) di daerah yang sama; dan</li>
+                  <li class="list-group-item">16.	Bukan berasal dari unsur panitia seleksi atau sekretariat panitia seleksi</li>
                 </ul>
              </div>
            </div>
@@ -58,25 +69,28 @@
            <div class="card-header" id="headingTwo">
              <h5 class="mb-0">
                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                 Persyratan Umum
+                PERSYARATAN ADMINISTRASI
                </button>
              </h5>
            </div>
            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
              <div class="card-body">
               <ul class="list-group">
-                <li class="list-group-item">1. Warga Negara Indonesia</li>
-                <li class="list-group-item">2. Bergama Islam</li>
-                <li class="list-group-item">3. Bertakwa Kepada Allah SWT.</li>
-                <li class="list-group-item">4. Berakhlak mulia.</li>
-                <li class="list-group-item">5. Berusia minimal 40 (empat puluh) tahun.</li>
-                <li class="list-group-item">6. Sehat jasmani dan rohani.</li>
-                <li class="list-group-item">7. Tidak menjadi anggota partai politik.</li>
-                <li class="list-group-item">8. Tidak terlinat dalam kegiatan politik praktis.</li>
-                <li class="list-group-item">9. Memiliki kompetensi di bidang pengelolaan zakat.</li>
-                <li class="list-group-item">10 Bersedia bekerja penuh waktu.</li>
-                <li class="list-group-item">11. Tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun; dan.</li>
-                <li class="list-group-item">12. Tidak merangkap jabatan sebagai pengurus dan/atau pegawai pengelola zakat lainya.</li>
+                <li class="list-group-item">1. Surat permohonan menjadi calon pimpinan BAZNAS Kabupaten Tulang Bawang</li>
+                <li class="list-group-item">2. Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
+                <li class="list-group-item">3. Foto kopi kartu tanda penduduk</li>
+                <li class="list-group-item">4. Daftar riwayat hidup atau biodata diri, bertanggal, bulan, tahun dan ditandatangani (asli)</li>
+                <li class="list-group-item">5. Surat keterangan sehat jasmani dan rohani yang dikeluarkan oleh Rumah Sakit Pemerintah (asli)</li>
+                <li class="list-group-item">6. Surat keterangan bebas narkoba yang dikeluarkan oleh Badan Narkotika Nasional setempat (asli)</li>
+                <li class="list-group-item">7. Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik praktis, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
+                <li class="list-group-item">8. Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
+                <li class="list-group-item">9. Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</li>
+                <li class="list-group-item">10.	Surat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</li>
+                <li class="list-group-item">11.	Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
+                <li class="list-group-item">12.	Surat pernyataan bersedia mengundurkan diri sebagai pengurus atau pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
+                <li class="list-group-item">13.	Surat pernyataan bersedia diberhentikan sementara sesuai ketentuan peraturan perundang-undangan bagi calon yang berasal dari pegawai negeri sipil, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
+                <li class="list-group-item">14.	Pas photo warna terbaru 4x6</li>
+                <li class="list-group-item">15.	Makalah yang berjudul ”Optimalisasi Pengelolaaan Zakat pada BAZNAS di Kabupaten Tulang Bawang”</li>
               </ul>
              </div>
            </div>
@@ -85,25 +99,20 @@
            <div class="card-header" id="headingThree">
              <h5 class="mb-0">
                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                 Tata Cara Pendaftaran
+                KETENTUAN LAINNYA
                </button>
              </h5>
            </div>
            <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
              <div class="card-body">
               <ul class="list-group">
-                <li class="list-group-item">1. Pendaftaran Calon Pimpinan BAZNAS Kabupaten Tulang Bawang dilakukan dengan mengajukan lamaran secara tertulis kepada Panitia Seleksi (format surat lamaran terlampir) dengan melapirkan dokumen:</li>
-                <li class="list-group-item">a. Daftar Riwayat Hidup</li>
-                <li class="list-group-item">3. Bertakwa Kepada Allah SWT.</li>
-                <li class="list-group-item">4. Berakhlak mulia.</li>
-                <li class="list-group-item">5. Berusia minimal 40 (empat puluh) tahun.</li>
-                <li class="list-group-item">6. Sehat jasmani dan rohani.</li>
-                <li class="list-group-item">7. Tidak menjadi anggota partai politik.</li>
-                <li class="list-group-item">8. Tidak terlinat dalam kegiatan politik praktis.</li>
-                <li class="list-group-item">9. Memiliki kompetensi di bidang pengelolaan zakat.</li>
-                <li class="list-group-item">10 Bersedia bekerja penuh waktu.</li>
-                <li class="list-group-item">11. Tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun; dan.</li>
-                <li class="list-group-item">12. Tidak merangkap jabatan sebagai pengurus dan/atau pegawai pengelola zakat lainya.</li>
+                <li class="list-group-item">1. Peserta yang dinyatakan lulus seleksi administrasi akan diumumkan melalui melalui Email masing-masing peserta serta berhak mengikuti tahapan seleksi kompetensi dengan membawa Berkas Administrasi (Asli)</li>
+                <li class="list-group-item">2. Peserta yang dinyatakan lulus seleksi kompetensi akan diumumkan melalui melalui Email masing-masing peserta serta berhak mengikuti tahapan seleksi wawancara</li>
+                <li class="list-group-item">3. Peserta yang dinyatakan lulus seleksi wawancara akan ditetapkan dalam Berita Acara Hasil Seleksi (BAHS) dan diumumkan melalui melalui Email masing-masing peserta serta dilaporkan kepada Pj. Bupati Tulang Bawang yang kemudian akan dimintakan pertimbangan kepada BAZNAS RI</li>
+                <li class="list-group-item">4. BAZNAS RI akan melakukan verifikasi administrasi dan verifikasi faktual (investigasi dan wawancara) setelah dokumen dinyatakan lengkap untuk ditetapkan 5 (lima) orang calon pimpinan BAZNAS Kabupaten Tulang Bawang yang akan diangkat dan dilantik oleh Pj. Bupati Tulang Bawang</li>
+                <li class="list-group-item">5. Selama proses seleksi, peserta tidak dipungut biaya dan panitia seleksi tidak menanggung biaya yang telah dikeluarkan oleh peserta</li>
+                <li class="list-group-item">6. Berkas lamaran tidak dikembalikan apabila peserta dinyatakan tidak lulus seleksi</li>
+                <li class="list-group-item">7. Keputusan panitia seleksi bersifat final dan tidak dapat diganggu gugat</li>
               </ul>
              </div>
            </div>
@@ -127,11 +136,11 @@
             <input type="number" class="form-control" id="no_tlp" name="no_tlp">
           </div>
          <div class="form-group mt-3">
-            <label for="lampiran_1">Surat permohonan menjadi pimpinan BAZNAS Kab. Tuba</label>
+            <label for="lampiran_1">Surat permohonan menjadi calon pimpinan BAZNAS Kabupaten Tulang Bawang</label>
             <input type="file" class="form-control" id="lampiran_1" name="lampiran_1">
           </div>
          <div class="form-group mt-3">
-            <label for="lampiran_2">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan di tandatangai diatas matrai Rp. 10.000 (asli)</label>
+            <label for="lampiran_2">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</label>
             <input type="file" class="form-control" id="lampiran_2" name="lampiran_2">
           </div>
          <div class="form-group mt-3">
@@ -163,7 +172,7 @@
             <input type="file" class="form-control" id="lampiran_9" name="lampiran_9">
           </div>
          <div class="form-group mt-3">
-            <label for="lampiran_10">Suarat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
+            <label for="lampiran_10">Surat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
             <input type="file" class="form-control" id="lampiran_10" name="lampiran_10">
           </div>
          <div class="form-group mt-3">
@@ -173,6 +182,18 @@
          <div class="form-group mt-3">
             <label for="lampiran_12">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
             <input type="file" class="form-control" id="lampiran_12" name="lampiran_12">
+          </div>
+         <div class="form-group mt-3">
+            <label for="lampiran_13">Surat pernyataan bersedia diberhentikan sementara sesuai ketentuan peraturan perundang-undangan bagi calon yang berasal dari pegawai negeri sipil, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</label>
+            <input type="file" class="form-control" id="lampiran_13" name="lampiran_13">
+          </div>
+         <div class="form-group mt-3">
+            <label for="photo">Pas photo warna terbaru 4x6</label>
+            <input type="file" class="form-control" id="photo" name="photo">
+          </div>
+         <div class="form-group mt-3">
+            <label for="makalah">Makalah yang berjudul <span class="font-weight-bold">”Optimalisasi Pengelolaaan Zakat pada BAZNAS di Kabupaten Tulang Bawang"</span> (PDF)</label>
+            <input type="file" class="form-control" id="makalah" name="makalah">
           </div>
          <div class="form-group mt-4">
           @include('layouts._loading_submit')

@@ -26,6 +26,9 @@ class UserController extends Controller
                 'lampiran_10'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_11'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_12'  => 'required|file|mimes:pdf|max:2048',
+                'lampiran_13'  => 'required|file|mimes:pdf|max:2048',
+                'photo'         => 'required|file|mimes:jpg,jpeg,png|max:3048',
+                'makalah'       => 'required|file|mimes:pdf|max:3048',
             ]);
 
             $lampiran_1 = $request->file('lampiran_1');
@@ -64,6 +67,15 @@ class UserController extends Controller
             $lampiran_12 = $request->file('lampiran_12');
             $lampiran_12->storeAs('public/lampiran', $lampiran_12->hashName());
 
+            $lampiran_13 = $request->file('lampiran_13');
+            $lampiran_13->storeAs('public/lampiran', $lampiran_13->hashName());
+
+            $photo = $request->file('photo');
+            $photo->storeAs('public/photo', $photo->hashName());
+
+            $makalah = $request->file('makalah');
+            $makalah->storeAs('public/lampiran', $makalah->hashName());
+
 
             $resgister = tb_pendaftar::create([
                 'nama_pendaftar'    => $request->nama_pendaftar,
@@ -81,6 +93,9 @@ class UserController extends Controller
                 'lampiran_10'  =>  $request->lampiran_10->hashName(),
                 'lampiran_11'  =>  $request->lampiran_11->hashName(),
                 'lampiran_12'  =>  $request->lampiran_12->hashName(),
+                'lampiran_13'  =>  $request->lampiran_13->hashName(),
+                'photo'        => $request->photo->hashName(),
+                'makalah'      => $request->makalah->hashName(),
             ]);
 
             if ($resgister) {
