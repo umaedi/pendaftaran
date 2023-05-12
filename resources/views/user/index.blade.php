@@ -249,9 +249,7 @@
                         });
                     }).catch((err) => {
                         loadingsubmit(false);
-                        swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
-                        window.location.href = '/';
-                    });
+                        swal({text: err.responseJSON.message, icon: 'error', timer: 3000,});
                 });
 
                 function loadingsubmit(state){
