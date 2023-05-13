@@ -208,8 +208,8 @@
       <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6>PENGUMUMAN</h6>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Unduh Pengumuman <span class="font-weight-bold text-success"><a href="#" target="_blank">disini</a></span></li>
-            <li class="list-group-item">Unduh Formulir Pendaftaran <span class="font-weight-bold text-success"><a href="#" target="_blank">disini</a></span></li>
+            <li class="list-group-item">Unduh Pengumuman <span class="font-weight-bold text-success"><a href="https://docs.google.com/uc?export=download&id=1Qa3jrpT9nyYr8n5_Yh954f38pHL3nSOP" target="_blank">disini</a></span></li>
+            <li class="list-group-item">Unduh Formulir Pendaftaran <span class="font-weight-bold text-success"><a href="https://docs.google.com/uc?export=download&id=1T2IrSVEtD2UxwB3XjJobfG79xseU7wDW" target="_blank">disini</a></span></li>
           </ul>
       </div>
       <div class="my-3 p-3 bg-white rounded box-shadow">
