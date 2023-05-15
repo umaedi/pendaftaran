@@ -33,7 +33,7 @@
     <div class="row">
       <div class="col-md-8">
         <div class="my-3 p-3 bg-white rounded box-shadow">
-          <h6 class="border-bottom border-gray pb-2 mb-3">Persyaratan Umum Pendaftaran Calon Pimpinan BAZNAS Kab. Tulang Bawang</h6>
+          <h6 class="border-bottom border-gray pb-2 mb-3">Persyaratan Pendaftaran Calon Pimpinan BAZNAS Kabupaten Tulang Bawang</h6>
           <div id="accordion">
              <div class="card">
                <div class="card-header" id="headingOne">

@@ -24,7 +24,7 @@
                     <img data-src="{{ asset('assets/img/success.svg') }}" class="lazyload" width="150" alt="">
                     <div class="x-text mt-3">
                         <h5>PENDAFTARAN BERHASIL</h5>
-                        <p>Terimakasih sudah mengisi formulir pendaftarn calon pimpinan BAZNAS Kab. Tulang Bawang. Kami akan mengirimi Anda email setelah kami memverifikasi berkas Anda.</p>
+                        <p>Terimakasih sudah mengisi formulir pendaftarn calon pimpinan BAZNAS Kabupaten Tulang Bawang. Kami akan mengirimi Anda email setelah kami memverifikasi berkas Anda.</p>
                     </div>
                     <a href="/" class="btn btn-primary">KEMBALI</a>
                 </div>
