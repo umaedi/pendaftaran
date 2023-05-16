@@ -153,7 +153,7 @@
                 <input type="file" class="form-control" id="lampiran_4" name="lampiran_4">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_5">Surat keterangan sehat jasmanidan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
+                <label for="lampiran_5">Surat keterangan sehat jasmani dan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
                 <input type="file" class="form-control" id="lampiran_5" name="lampiran_5">
               </div>
              <div class="form-group mt-3">

@@ -12,7 +12,7 @@ class DashboardController extends Controller
     {
         if (\request()->ajax()) {
 
-            $data['table'] = tb_pendaftar::where('status', '0')->get();
+            $data['table'] = tb_pendaftar::where('status', '0')->paginate(10);
             return view('admin.dashboard._data_table', $data);
         }
 

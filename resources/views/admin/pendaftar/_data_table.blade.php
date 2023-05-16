@@ -12,7 +12,7 @@
     <tbody>
         @forelse ($table as $key => $tb)
         <tr>
-            <th>1</th>
+            <th scope="row">{{ $table->firstItem() + $key }}</th>
             <td>{{ $tb->nama_pendaftar }}</td>
             <td>{{ $tb->email }}</td>
             <td><a href="https://api.whatsapp.com/send?phone=62{{ substr($tb->no_tlp, 1) }}">{{ $tb->no_tlp }}</a></td>
@@ -46,3 +46,8 @@
         @endforelse
     </tbody>
 </table>
+<div class="container">
+    <div class="row justify-content-center">
+        {{ $table->links('pagination.stisla-paging') }}
+    </div>
+</div>
