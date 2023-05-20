@@ -3,10 +3,10 @@
 <div class="main-content">
     <section class="section x-lampiran">
       <div class="section-header">
-        <h1>Detail Pendaftar</h1>
+        <h1>{{ __('Detail Pendaftar') }}</h1>
         <div class="section-header-breadcrumb">
-          <div class="breadcrumb-item active"><a href="/admin/dashboard">Dashboard</a></div>
-          <div class="breadcrumb-item">Detail Pendaftar</div>
+          <div class="breadcrumb-item active"><a href="/admin/dashboard">{{ __('Dashboard') }}</a></div>
+          <div class="breadcrumb-item">{{ __('Detail Pendaftar') }}</div>
         </div>
       </div>
       <div class="row">

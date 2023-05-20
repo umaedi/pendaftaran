@@ -7,7 +7,6 @@
   <meta name="description" content="">
   <meta name="author" content="">
   <meta name="csrf-token" content="{{ csrf_token() }}">
-  {{-- <link rel="icon" href="../../../../favicon.ico"> --}}
   <title>Pendaftaran Calon Ketua BAZNAS TUBA</title>
   <link href="{{ asset('assets') }}/css/bootstrap.min.css" rel="stylesheet">
 
@@ -193,7 +192,7 @@
                 <input type="file" class="form-control" id="photo" name="photo">
               </div>
              <div class="form-group mt-3">
-                <label for="makalah">Makalah yang berjudul <span class="font-weight-bold">”Optimalisasi Pengelolaaan Zakat pada BAZNAS di Kabupaten Tulang Bawang"</span> (PDF)</label>
+                <label for="makalah">Makalah yang berjudul <span class="font-weight-bold">”Optimalisasi Pengelolaan Zakat pada BAZNAS di Kabupaten Tulang Bawang"</span> (PDF)</label>
                 <input type="file" class="form-control" id="makalah" name="makalah">
               </div>
              <div class="form-group mt-4">
@@ -286,5 +285,4 @@
         });
   </script>
 </body>
-
 </html>
