@@ -35,13 +35,42 @@
           <h6 class="border-bottom border-gray pb-2 mb-3">Persyaratan Pendaftaran Calon Pimpinan BAZNAS Kabupaten Tulang Bawang</h6>
           <div id="accordion">
              <div class="card">
-               <div class="card-header" id="headingOne">
+               <div class="card-header" id="headingZero">
                  <h5 class="mb-0">
-                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                    PERSYARATAN UMUM
+                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseZero" aria-expanded="false" aria-controls="collapseZero">
+                    DASAR HUKUM
                    </button>
                  </h5>
                </div>
+               <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
+                 <div class="card-body">
+                   <ul class="list-group">
+                      <li class="list-group-item">1. Warga Negara Indonesia</li>
+                      <li class="list-group-item">2. Beragama Islam</li>
+                      <li class="list-group-item">3. Bertakwa kepada Allah SWT</li>
+                      <li class="list-group-item">4. Berakhlak mulia</li>
+                      <li class="list-group-item">5. Berusia minimal 40 (empat puluh) tahun; (pada saat mendaftar)</li>
+                      <li class="list-group-item">6. Sehat jasmani dan rohani</li>
+                      <li class="list-group-item">7. Tidak menjadi anggota partai politik</li>
+                      <li class="list-group-item">8. Tidak terlibat dalam kegiatan politik praktis</li>
+                      <li class="list-group-item">9. Memiliki kompetensi di bidang pengelolaan zakat</li>
+                      <li class="list-group-item">10. Bersedia untuk bekerja penuh waktu</li>
+                      <li class="list-group-item">11.	Tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan  pidana  penjara  paling singkat 5 (lima) tahun</li>
+                      <li class="list-group-item">12.	Tidak merangkap jabatan  sebagai  pengurus  dan/atau pegawai pengelola zakat lain</li>
+                      <li class="list-group-item">13.	Berasal dari unsur masyarakat yang meliputi ulama, tenaga profesional, dan tokoh masyarakat Islam</li>
+                      <li class="list-group-item">14.	Jika berasal dari pengawai negeri sipil, harus diberhentikan sementara sebagai negeri sipil sesuai ketentuan peraturan perundang-undangan</li>
+                      <li class="list-group-item">15.	Belum pernah menjabat sebagai Pimpinan BAZNAS Provinsi atau BAZNAS Kabupaten/Kota selama 2 (dua) kali masa jabatan (periode) di daerah yang sama; dan</li>
+                      <li class="list-group-item">16.	Bukan berasal dari unsur panitia seleksi atau sekretariat panitia seleksi</li>
+                    </ul>
+                 </div>
+               </div>
+               <div class="card-header" id="headingOne">
+                <h5 class="mb-0">
+                  <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                   PERSYARATAN UMUM
+                  </button>
+                </h5>
+              </div>
                <div id="collapseOne" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
                  <div class="card-body">
                    <ul class="list-group">
