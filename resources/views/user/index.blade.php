@@ -14,7 +14,7 @@
 </head>
 
 <body class="bg-light">
-  <img src="{{ asset('assets') }}/img/banner/BANNER-965X250.png" class="img-fluid" alt="Responsive image">
+  <img data-src="{{ asset('assets') }}/img/banner/BANNER-965X250.png" class="img-fluid lazyload" alt="Responsive image">
   <main role="main" class="container">
     <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
       <img class="mr-3" src="{{ asset('assets') }}/img/logo/baznas-tuba.png" alt="" width="55" height="55">
@@ -173,7 +173,7 @@
                 <input type="file" class="form-control" id="lampiran_4" name="lampiran_4">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_5">Surat keterangan sehat jasmani dan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
+                <label for="lampiran_5">Surat keterangan sehat jasmani dan rohani yang dikeluarkan oleh Rumah Sakit Pemerintah (asli)</label>
                 <input type="file" class="form-control" id="lampiran_5" name="lampiran_5">
               </div>
              <div class="form-group mt-3">
@@ -246,6 +246,7 @@
  
   </main>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js" async=""></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="{{ asset('assets') }}/js/bootstrap.min.js"></script>
   <script src="{{ asset('assets') }}/js/vendor/holder.min.js"></script>
