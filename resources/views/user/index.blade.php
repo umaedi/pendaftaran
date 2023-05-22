@@ -14,13 +14,7 @@
 </head>
 
 <body class="bg-light">
-   <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img class="d-block w-100" src="{{ asset('assets') }}/img/banner/BANNER-965X250.png" alt="First slide">
-        </div>
-      </div>
-    </div>
+  <img src="{{ asset('assets') }}/img/banner/BANNER-965X250.png" class="img-fluid" alt="Responsive image">
   <main role="main" class="container">
     <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
       <img class="mr-3" src="{{ asset('assets') }}/img/logo/baznas-tuba.png" alt="" width="55" height="55">
@@ -101,14 +95,23 @@
                     <li class="list-group-item">5. Surat keterangan sehat jasmani dan rohani yang dikeluarkan oleh Rumah Sakit Pemerintah (asli)</li>
                     <li class="list-group-item">6. Surat keterangan bebas narkoba yang dikeluarkan oleh Badan Narkotika Nasional setempat (asli)</li>
                     <li class="list-group-item">7. Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik praktis, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
-                    <li class="list-group-item">8. Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
-                    <li class="list-group-item">9. Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</li>
-                    <li class="list-group-item">10.	Surat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</li>
-                    <li class="list-group-item">11.	Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
-                    <li class="list-group-item">12.	Surat pernyataan bersedia mengundurkan diri sebagai pengurus atau pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
-                    <li class="list-group-item">13.	Surat pernyataan bersedia diberhentikan sementara sesuai ketentuan peraturan perundang-undangan bagi calon yang berasal dari pegawai negeri sipil, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</li>
-                    <li class="list-group-item">14.	Pas photo warna terbaru 4x6</li>
-                    <li class="list-group-item">15.	Makalah yang berjudul ”Optimalisasi Pengelolaaan Zakat pada BAZNAS di Kabupaten Tulang Bawang”</li>
+                    <li class="list-group-item">8. Surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah
+                      terdaftar atau aktif sebagai anggota atau pengurus partai politik, yang
+                      menerangkan bahwa yang bersangkutan sudah tidak aktif lagi sebagai anggota/
+                      pengurus partai politik, bertanggal, bulan, tahun, di Cap dan
+                      ditandatangani (asli)</li>
+                    <li class="list-group-item">9. Surat keterangan tidak pernah dihukum karena melakukan tindak pidana
+                      kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun
+                      yang dikeluarkan oleh pengadilan negeri setempat (asli)</li>
+                    <li class="list-group-item">10.	Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai
+                      pengelola zakat lain, bertanggal, bulan, tahun dan ditandatangani diatas materai
+                      Rp.10.000 (asli)</li>
+                    <li class="list-group-item">11.	Surat pernyataan bersedia mengundurkan diri sebagai pengurus atau pegawai
+                      pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan
+                      ditandatangani diatas materai Rp.10.000 (asli)</li>
+                    <li class="list-group-item">12.	Pas photo warna terbaru 4x6</li>
+                    <li class="list-group-item">13.	Makalah yang berjudul ”Optimalisasi Pengelolaaan Zakat pada
+                      BAZNAS di Kabupaten Tulang Bawang”</li>
                   </ul>
                  </div>
                </div>
@@ -207,14 +210,6 @@
                   ditandatangani diatas materai Rp.10.000 (asli)</label>
                 <input type="file" class="form-control" id="lampiran_11" name="lampiran_11">
               </div>
-             {{-- <div class="form-group mt-3">
-                <label for="lampiran_12">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-                <input type="file" class="form-control" id="lampiran_12" name="lampiran_12">
-              </div> --}}
-             {{-- <div class="form-group mt-3">
-                <label for="lampiran_13">Surat pernyataan bersedia diberhentikan sementara sesuai ketentuan peraturan perundang-undangan bagi calon yang berasal dari pegawai negeri sipil, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</label>
-                <input type="file" class="form-control" id="lampiran_13" name="lampiran_13">
-              </div> --}}
              <div class="form-group mt-3">
                 <label for="photo">Pas photo warna terbaru 4x6</label>
                 <input type="file" class="form-control" id="photo" name="photo">
@@ -235,15 +230,15 @@
       <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6>PENGUMUMAN</h6>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Unduh Pengumuman <span class="font-weight-bold text-success"><a href="https://docs.google.com/uc?export=download&id=1Qa3jrpT9nyYr8n5_Yh954f38pHL3nSOP" target="_blank">disini</a></span></li>
-            <li class="list-group-item">Unduh Formulir Pendaftaran <span class="font-weight-bold text-success"><a href="https://docs.google.com/uc?export=download&id=1T2IrSVEtD2UxwB3XjJobfG79xseU7wDW" target="_blank">disini</a></span></li>
+            <li class="list-group-item">Unduh Pengumuman <span class="font-weight-bold text-success"><a href="https://docs.google.com/uc?export=download&id=1xH3naTH9yQrjSyOf_CUYYHv5DSM1RmRp" target="_blank">disini</a></span></li>
+            <li class="list-group-item">Unduh Formulir Pendaftaran <span class="font-weight-bold text-success"><a href="https://docs.google.com/uc?export=download&id=1B7CvaHkgweMXUUHwFxBQz5EbRWlOgEvV" target="_blank">disini</a></span></li>
           </ul>
       </div>
       <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6>KONTAK KAMI</h6>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Tien Kartini, S.E., M.M <span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6281273537355" target="_blank">+6281273537355</a></span></li>
-            <li class="list-group-item">Yulia Sari, S.E <br><span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6282178727871" target="_blank">+6282178727871</a></span></li>
+            <li class="list-group-item">Tien Kartini, S.E., M.M : <span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6281273537355" target="_blank">081273537355</a></span></li>
+            <li class="list-group-item">Yulia Sari, S.E : <span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6282178727871" target="_blank">082178727871</a></span></li>
           </ul>
       </div>
     </div>
