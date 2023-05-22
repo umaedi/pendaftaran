@@ -18,7 +18,7 @@ class UserController extends Controller
                     'no_tlp'  => 'required',
                     'lampiran_1'  => 'required|file|mimes:pdf|max:2048',
                     'lampiran_2'  => 'required|file|mimes:pdf|max:2048',
-                    'lampiran_3'  => 'required|file|mimes:pdf|max:2048',
+                    'lampiran_3'  => 'required|file|mimes:pdf,jpg,jpeg,png|max:2048',
                     'lampiran_4'  => 'required|file|mimes:pdf|max:2048',
                     'lampiran_5'  => 'required|file|mimes:pdf|max:2048',
                     'lampiran_6'  => 'required|file|mimes:pdf|max:2048',
@@ -27,8 +27,6 @@ class UserController extends Controller
                     'lampiran_9'  => 'required|file|mimes:pdf|max:2048',
                     'lampiran_10'  => 'required|file|mimes:pdf|max:2048',
                     'lampiran_11'  => 'required|file|mimes:pdf|max:2048',
-                    'lampiran_12'  => 'required|file|mimes:pdf|max:2048',
-                    'lampiran_13'  => 'required|file|mimes:pdf|max:2048',
                     'photo'         => 'required|file|mimes:jpg,jpeg,png|max:3048',
                     'makalah'       => 'required|file|mimes:pdf|max:3048',
                 ]);
@@ -67,12 +65,6 @@ class UserController extends Controller
                 $lampiran_11 = $request->file('lampiran_11');
                 $lampiran_11->storeAs('public/lampiran', $lampiran_11->hashName());
 
-                $lampiran_12 = $request->file('lampiran_12');
-                $lampiran_12->storeAs('public/lampiran', $lampiran_12->hashName());
-
-                $lampiran_13 = $request->file('lampiran_13');
-                $lampiran_13->storeAs('public/lampiran', $lampiran_13->hashName());
-
                 $photo = $request->file('photo');
                 $photo->storeAs('public/photo', $photo->hashName());
 
@@ -95,8 +87,6 @@ class UserController extends Controller
                     'lampiran_9'   =>  $request->lampiran_9->hashName(),
                     'lampiran_10'  =>  $request->lampiran_10->hashName(),
                     'lampiran_11'  =>  $request->lampiran_11->hashName(),
-                    'lampiran_12'  =>  $request->lampiran_12->hashName(),
-                    'lampiran_13'  =>  $request->lampiran_13->hashName(),
                     'photo'        => $request->photo->hashName(),
                     'makalah'      => $request->makalah->hashName(),
                 ]);
@@ -115,7 +105,7 @@ class UserController extends Controller
                 'no_tlp'  => 'required',
                 'lampiran_1'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_2'  => 'required|file|mimes:pdf|max:2048',
-                'lampiran_3'  => 'required|file|mimes:pdf|max:2048',
+                'lampiran_3'  => 'required|file|mimes:pdf,jpg,jpeg,png|max:2048',
                 'lampiran_4'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_5'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_6'  => 'required|file|mimes:pdf|max:2048',
@@ -124,8 +114,6 @@ class UserController extends Controller
                 'lampiran_9'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_10'  => 'required|file|mimes:pdf|max:2048',
                 'lampiran_11'  => 'required|file|mimes:pdf|max:2048',
-                'lampiran_12'  => 'required|file|mimes:pdf|max:2048',
-                'lampiran_13'  => 'required|file|mimes:pdf|max:2048',
                 'photo'         => 'required|file|mimes:jpg,jpeg,png|max:3048',
                 'makalah'       => 'required|file|mimes:pdf|max:3048',
             ]);
@@ -163,11 +151,11 @@ class UserController extends Controller
             $lampiran_11 = $request->file('lampiran_11');
             $lampiran_11->storeAs('public/lampiran', $lampiran_11->hashName());
 
-            $lampiran_12 = $request->file('lampiran_12');
-            $lampiran_12->storeAs('public/lampiran', $lampiran_12->hashName());
+            // $lampiran_12 = $request->file('lampiran_12');
+            // $lampiran_12->storeAs('public/lampiran', $lampiran_12->hashName());
 
-            $lampiran_13 = $request->file('lampiran_13');
-            $lampiran_13->storeAs('public/lampiran', $lampiran_13->hashName());
+            // $lampiran_13 = $request->file('lampiran_13');
+            // $lampiran_13->storeAs('public/lampiran', $lampiran_13->hashName());
 
             $photo = $request->file('photo');
             $photo->storeAs('public/photo', $photo->hashName());
@@ -191,8 +179,8 @@ class UserController extends Controller
                 'lampiran_9'   =>  $request->lampiran_9->hashName(),
                 'lampiran_10'  =>  $request->lampiran_10->hashName(),
                 'lampiran_11'  =>  $request->lampiran_11->hashName(),
-                'lampiran_12'  =>  $request->lampiran_12->hashName(),
-                'lampiran_13'  =>  $request->lampiran_13->hashName(),
+                // 'lampiran_12'  =>  $request->lampiran_12->hashName(),
+                // 'lampiran_13'  =>  $request->lampiran_13->hashName(),
                 'photo'        => $request->photo->hashName(),
                 'makalah'      => $request->makalah->hashName(),
                 'status'       => '0',

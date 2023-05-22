@@ -32,7 +32,7 @@
     <div class="row">
       <div class="col-md-8">
         <div class="my-3 p-3 bg-white rounded box-shadow">
-          <h6 class="border-bottom border-gray pb-2 mb-3">Persyaratan Pendaftaran Calon Pimpinan BAZNAS Kabupaten Tulang Bawang</h6>
+          <h6 class="border-bottom border-gray pb-2 mb-3">Pendaftaran Calon Pimpinan BAZNAS Kabupaten Tulang Bawang</h6>
           <div id="accordion">
              <div class="card">
                <div class="card-header" id="headingZero">
@@ -45,22 +45,11 @@
                <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
                  <div class="card-body">
                    <ul class="list-group">
-                      <li class="list-group-item">1. Warga Negara Indonesia</li>
-                      <li class="list-group-item">2. Beragama Islam</li>
-                      <li class="list-group-item">3. Bertakwa kepada Allah SWT</li>
-                      <li class="list-group-item">4. Berakhlak mulia</li>
-                      <li class="list-group-item">5. Berusia minimal 40 (empat puluh) tahun; (pada saat mendaftar)</li>
-                      <li class="list-group-item">6. Sehat jasmani dan rohani</li>
-                      <li class="list-group-item">7. Tidak menjadi anggota partai politik</li>
-                      <li class="list-group-item">8. Tidak terlibat dalam kegiatan politik praktis</li>
-                      <li class="list-group-item">9. Memiliki kompetensi di bidang pengelolaan zakat</li>
-                      <li class="list-group-item">10. Bersedia untuk bekerja penuh waktu</li>
-                      <li class="list-group-item">11.	Tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan  pidana  penjara  paling singkat 5 (lima) tahun</li>
-                      <li class="list-group-item">12.	Tidak merangkap jabatan  sebagai  pengurus  dan/atau pegawai pengelola zakat lain</li>
-                      <li class="list-group-item">13.	Berasal dari unsur masyarakat yang meliputi ulama, tenaga profesional, dan tokoh masyarakat Islam</li>
-                      <li class="list-group-item">14.	Jika berasal dari pengawai negeri sipil, harus diberhentikan sementara sebagai negeri sipil sesuai ketentuan peraturan perundang-undangan</li>
-                      <li class="list-group-item">15.	Belum pernah menjabat sebagai Pimpinan BAZNAS Provinsi atau BAZNAS Kabupaten/Kota selama 2 (dua) kali masa jabatan (periode) di daerah yang sama; dan</li>
-                      <li class="list-group-item">16.	Bukan berasal dari unsur panitia seleksi atau sekretariat panitia seleksi</li>
+                      <li class="list-group-item">1. Undang-Undang Nomor 2 Tahun 2011 tentang Pengelolaan Zakat (Lembaran Negara Republik Indonesia Tahun 2011 Nomor 115, Tambahan Lembaran Negara Republik Indonesia Nomor 5255) </li>
+                      <li class="list-group-item">2. Peraturan Pemerintah Republik Indonesia Nomor 14 Tahun 2014 Tentang Pelaksanaan Undang-Undang Nomor 23 Tahun 2011 Tentang Pengelolaan Zakat
+                        </li>
+                      <li class="list-group-item">3. Peraturan Badan Amil Zakat Nasional Republik Indonesia Nomor 1 Tahun 2019 Tentang Tata Cara Pengangkatan dan Pembentukan Pimpinan Badan Amil Zakat Nasional Provinsi dan Badan Amil Zakat Nasional Kabupaten Kota.</li>
+                      <li class="list-group-item">4. Keputusan Bupati Tulang Bawang Nomor:B/198/I.2/HK/TB/2023 Tentang Pembentukan Panitia Seleksi Badan Amil Zakat Nasional Kabupaten Tulang Bawang Periode 2023-2028</li>
                     </ul>
                  </div>
                </div>
@@ -193,29 +182,39 @@
                 <input type="file" class="form-control" id="lampiran_7" name="lampiran_7">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_8">Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, beratanggal, bulan, tahun dan ditandatangani diatas matrai Rp. 10.000 (asli)</label>
+                <label for="lampiran_8">Surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah
+                terdaftar atau aktif sebagai anggota atau pengurus partai politik, yang
+                menerangkan bahwa yang bersangkutan sudah tidak aktif lagi sebagai anggota/
+                pengurus partai politik, bertanggal, bulan, tahun, di Cap dan
+                ditandatangani (asli)</label>
                 <input type="file" class="form-control" id="lampiran_8" name="lampiran_8">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_9">Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</label>
+                <label for="lampiran_9">Surat keterangan tidak pernah dihukum karena melakukan tindak pidana
+                  kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun
+                  yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
                 <input type="file" class="form-control" id="lampiran_9" name="lampiran_9">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_10">Surat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
+                <label for="lampiran_10">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai
+                pengelola zakat lain, bertanggal, bulan, tahun dan ditandatangani diatas materai
+                Rp.10.000 (asli)</label>
                 <input type="file" class="form-control" id="lampiran_10" name="lampiran_10">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_11">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+                <label for="lampiran_11">Surat pernyataan bersedia mengundurkan diri sebagai pengurus atau pegawai
+                  pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan
+                  ditandatangani diatas materai Rp.10.000 (asli)</label>
                 <input type="file" class="form-control" id="lampiran_11" name="lampiran_11">
               </div>
-             <div class="form-group mt-3">
+             {{-- <div class="form-group mt-3">
                 <label for="lampiran_12">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
                 <input type="file" class="form-control" id="lampiran_12" name="lampiran_12">
-              </div>
-             <div class="form-group mt-3">
+              </div> --}}
+             {{-- <div class="form-group mt-3">
                 <label for="lampiran_13">Surat pernyataan bersedia diberhentikan sementara sesuai ketentuan peraturan perundang-undangan bagi calon yang berasal dari pegawai negeri sipil, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</label>
                 <input type="file" class="form-control" id="lampiran_13" name="lampiran_13">
-              </div>
+              </div> --}}
              <div class="form-group mt-3">
                 <label for="photo">Pas photo warna terbaru 4x6</label>
                 <input type="file" class="form-control" id="photo" name="photo">
@@ -243,8 +242,8 @@
       <div class="my-3 p-3 bg-white rounded box-shadow">
           <h6>KONTAK KAMI</h6>
           <ul class="list-group list-group-flush">
-            <li class="list-group-item">Support 1: <span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=628127950260" target="_blank">+628127950260</a></span></li>
-            <li class="list-group-item">Support 2: <span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6285741492045" target="_blank">+6285741492045</a></span></li>
+            <li class="list-group-item">Tien Kartini, S.E., M.M <span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6281273537355" target="_blank">+6281273537355</a></span></li>
+            <li class="list-group-item">Yulia Sari, S.E <br><span class="font-weight-bold"><a href="https://api.whatsapp.com/send?phone=6282178727871" target="_blank">+6282178727871</a></span></li>
           </ul>
       </div>
     </div>
