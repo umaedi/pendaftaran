@@ -185,14 +185,14 @@
                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                  <div class="card-body">
                   <ul class="list-group">
-                    <li class="list-group-item">1. Pendaftaran dibuka pada tanggal 23 Mei 2023 s.d 20 Juli 2023 pukul 23:59 Wib</li>
+                    <li class="list-group-item">1. Pendaftaran dibuka pada tanggal 23 Mei 2023 s.d 21 Juli 2023 pukul 23:59 Wib</li>
                     <li class="list-group-item">2. Pendaftaran dilakukan secara online melalui link <a href="https://pendaftaranbaznas.tulangbawangkab.go.id/">https://pendaftaranbaznas.tulangbawangkab.go.id/</a> dengan mengunduh formulir
                       pendaftaran <a href="https://docs.google.com/uc?export=download&id=1B7CvaHkgweMXUUHwFxBQz5EbRWlOgEvV">disini</a></li>
                     <li class="list-group-item">3. Persyaratan Adminsitrasi (Berkas Fisik) diserahkan melalui sekretariat panitia
                       seleksi dengan alamat: Bagian Kesejahteraan Rakyat Sekretariat Daerah
                       Kabupaten Tulang Bawang Jl. Cemara Lk. Gunung Sakti Kel. Menggala Selatan
                       Kecamatan Menggala Kabupaten Tulang Bawang paling lambat tanggal                  
-                      30 Juli 2023 Pukul 16.00 Wib</li>
+                      24 Juli 2023 Pukul 16.00 Wib</li>
                     <li class="list-group-item">4. Bila ada kesulitan/ kendala dalam proses pendaftaran maka panitia siap
                       membantu memfasilitasi baik Via Online maupun tatap muka secara langsung</li>
                     <li class="list-group-item">5. Informasi lebih lanjut dapat menghubungi Sekretariat panitia seleksi:
@@ -240,6 +240,20 @@
                     <li class="list-group-item">6. Berkas lamaran tidak dikembalikan apabila peserta dinyatakan tidak lulus seleksi</li>
                     <li class="list-group-item">7. Keputusan panitia seleksi bersifat final dan tidak dapat diganggu gugat</li>
                   </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-header" id="headingSix">
+                 <h5 class="mb-0">
+                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                    TIME SCHEDULE
+                   </button>
+                 </h5>
+               </div>
+               <div id="collapseSix" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                 <div class="card-body">
+                  <img data-src="{{ asset('assets') }}/img/banner/time_schedule.png" class="img-fluid lazyload" alt="Responsive image">
                  </div>
                </div>
              </div>
