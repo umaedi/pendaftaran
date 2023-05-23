@@ -120,11 +120,101 @@
                <div class="card-header" id="headingThree">
                  <h5 class="mb-0">
                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                    KETENTUAN LAINNYA
+                    TAHAPAN SELEKSI
                    </button>
                  </h5>
                </div>
                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                 <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">1. Seleksi Administrasi;
+                      Seleksi Administrasi yaitu seleksi terhadap berkas dokumen lamaran
+                     peserta untuk  menilai kelengkapan dan keabsahan sesuai dengan
+                     persyaratan yang ditentukan</li>
+                    <li class="list-group-item">2. Seleksi Kompetensi;
+                      Seleksi Kompetensi menggunakan CAT (Computer Assisted Test), yaitu
+                      metode seleksi menggunakan alat bantu Komputer/Laptop/ Handphone (Hp)
+                      Android  yang berisi soal-soal :
+                      - Tes Kompetensi Teknis
+                      - Tes Kompetensi Manajerial dan
+                      - Tes Kompetensi Sosiokultural 
+                            Peserta diwajibkan Membawa Laptop atau Handphone (Hp)Android</li>
+                    <li class="list-group-item">3. Seleksi Wawancara <br>
+                      Seleksi wawancara adalah: Tanya jawab antara panitia seleksi dengan
+                      peserta yang meliputi :
+                      Uji Gagasan Visi, Misi dan Strategi Pengelolaan BAZNAS Kabupaten
+                      Tulang Bawang yang disampaikan dalam  bentuk  makalah dan
+                      dipaparkan dihadapan Pansel dengan judul Makalah: <span class="font-weight-bold">”Optimalisasi
+                        Pengelolaaan Zakat pada BAZNAS di Kabupaten Tulang
+                        Bawang”, </span> dengan Sistematika sebagai berikut:
+                      <br>
+                      Pengantar/Prakata 
+                      <br>
+                      Bab I Pendahuluan 
+                      <br>
+                      Bab II  Pembahasan
+                      <br>
+                      Dengan Pokok-Pokok Materi : 
+                      <br>
+                      A. Strategi pengumpulan dan pendistribusian zakat; 
+                      <br>
+                      B. Menjalin kemitraaan dan model sosialisasi potensi zakat; 
+                      <br>
+                      C. Sistem administrasi kelembagaan dan pelayanan BAZNAS; dan 
+                      <br>
+                      D. Evaluasi dan perumusan program kerja BAZNAS. 
+                      <br>
+                      Bab III Penutup. 
+                      <br>
+                      A. Kesimpulan. 
+                      <br>
+                      B. Saran.
+                      
+                    </li>
+                  </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-header" id="headingFour">
+                 <h5 class="mb-0">
+                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    TATA CARA PENDAFTARAN
+                   </button>
+                 </h5>
+               </div>
+               <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                 <div class="card-body">
+                  <ul class="list-group">
+                    <li class="list-group-item">1. Pendaftaran dibuka pada tanggal 22 Mei 2023 s.d 20 Juli 2023 pukul 23:59 Wib</li>
+                    <li class="list-group-item">2. Pendaftaran dilakukan secara online melalui link <a href="https://pendaftaranbaznas.tulangbawangkab.go.id/">https://pendaftaranbaznas.tulangbawangkab.go.id/</a> dengan mengunduh formulir
+                      pendaftaran <a href="https://docs.google.com/uc?export=download&id=1B7CvaHkgweMXUUHwFxBQz5EbRWlOgEvV">disini</a></li>
+                    <li class="list-group-item">3. Persyaratan Adminsitrasi (Berkas Fisik) diserahkan melalui sekretariat panitia
+                      seleksi dengan alamat: Bagian Kesejahteraan Rakyat Sekretariat Daerah
+                      Kabupaten Tulang Bawang Jl. Cemara Lk. Gunung Sakti Kel. Menggala Selatan
+                      Kecamatan Menggala Kabupaten Tulang Bawang paling lambat tanggal                  
+                      21 Juli 2023 Pukul 16.00 Wib</li>
+                    <li class="list-group-item">3. Bila ada kesulitan/ kendala dalam proses pendaftaran maka panitia siap
+                      membantu memfasilitasi baik Via Online maupun tatap muka secara langsung</li>
+                    <li class="list-group-item">4. Informasi lebih lanjut dapat menghubungi Sekretariat panitia seleksi:
+                      <br>
+                      Nama    : Tien Kartini, S.E., M.M   -- HP : <a href="https://api.whatsapp.com/send?phone=6281273537355">08127950260</a>  (WA) 
+                      <br>
+                      Nama    : Yulia Sari, S.E   -- HP : <a href="https://api.whatsapp.com/send?phone=6282178727871">082178727871</a>  (WA) 
+                    </li>
+                  </ul>
+                 </div>
+               </div>
+             </div>
+             <div class="card">
+               <div class="card-header" id="headingFive">
+                 <h5 class="mb-0">
+                   <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                    KETENTUAN LAINNYA
+                   </button>
+                 </h5>
+               </div>
+               <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
                  <div class="card-body">
                   <ul class="list-group">
                     <li class="list-group-item">1. Peserta yang dinyatakan lulus seleksi administrasi akan diumumkan melalui 
