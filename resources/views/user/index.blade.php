@@ -185,17 +185,17 @@
                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
                  <div class="card-body">
                   <ul class="list-group">
-                    <li class="list-group-item">1. Pendaftaran dibuka pada tanggal 22 Mei 2023 s.d 20 Juli 2023 pukul 23:59 Wib</li>
+                    <li class="list-group-item">1. Pendaftaran dibuka pada tanggal 23 Mei 2023 s.d 20 Juli 2023 pukul 23:59 Wib</li>
                     <li class="list-group-item">2. Pendaftaran dilakukan secara online melalui link <a href="https://pendaftaranbaznas.tulangbawangkab.go.id/">https://pendaftaranbaznas.tulangbawangkab.go.id/</a> dengan mengunduh formulir
                       pendaftaran <a href="https://docs.google.com/uc?export=download&id=1B7CvaHkgweMXUUHwFxBQz5EbRWlOgEvV">disini</a></li>
                     <li class="list-group-item">3. Persyaratan Adminsitrasi (Berkas Fisik) diserahkan melalui sekretariat panitia
                       seleksi dengan alamat: Bagian Kesejahteraan Rakyat Sekretariat Daerah
                       Kabupaten Tulang Bawang Jl. Cemara Lk. Gunung Sakti Kel. Menggala Selatan
                       Kecamatan Menggala Kabupaten Tulang Bawang paling lambat tanggal                  
-                      21 Juli 2023 Pukul 16.00 Wib</li>
-                    <li class="list-group-item">3. Bila ada kesulitan/ kendala dalam proses pendaftaran maka panitia siap
+                      30 Juli 2023 Pukul 16.00 Wib</li>
+                    <li class="list-group-item">4. Bila ada kesulitan/ kendala dalam proses pendaftaran maka panitia siap
                       membantu memfasilitasi baik Via Online maupun tatap muka secara langsung</li>
-                    <li class="list-group-item">4. Informasi lebih lanjut dapat menghubungi Sekretariat panitia seleksi:
+                    <li class="list-group-item">5. Informasi lebih lanjut dapat menghubungi Sekretariat panitia seleksi:
                       <br>
                       Nama    : Tien Kartini, S.E., M.M   -- HP : <a href="https://api.whatsapp.com/send?phone=6281273537355">08127950260</a>  (WA) 
                       <br>
