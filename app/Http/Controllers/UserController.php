@@ -53,8 +53,13 @@ class UserController extends Controller
                 $lampiran_7 = $request->file('lampiran_7');
                 $lampiran_7->storeAs('public/lampiran', $lampiran_7->hashName());
 
-                $lampiran_8 = $request->file('lampiran_8');
-                $lampiran_8->storeAs('public/lampiran', $lampiran_8->hashName());
+                if ($request->file('lampiran_8')) {
+                    $lampiran_8 = $request->file('lampiran_8');
+                    $lampiran_8->storeAs('public/lampiran', $lampiran_8->hashName());
+                } else {
+                    $lampiran_8 = '';
+                }
+
 
                 $lampiran_9 = $request->file('lampiran_9');
                 $lampiran_9->storeAs('public/lampiran', $lampiran_9->hashName());
@@ -83,7 +88,7 @@ class UserController extends Controller
                     'lampiran_5'   =>  $request->lampiran_5->hashName(),
                     'lampiran_6'   =>  $request->lampiran_6->hashName(),
                     'lampiran_7'   =>  $request->lampiran_7->hashName(),
-                    'lampiran_8'   =>  $request->lampiran_8->hashName(),
+                    'lampiran_8'   =>  $lampiran_8 ? $request->lampiran_8->hashName() : '',
                     'lampiran_9'   =>  $request->lampiran_9->hashName(),
                     'lampiran_10'  =>  $request->lampiran_10->hashName(),
                     'lampiran_11'  =>  $request->lampiran_11->hashName(),
@@ -139,8 +144,12 @@ class UserController extends Controller
             $lampiran_7 = $request->file('lampiran_7');
             $lampiran_7->storeAs('public/lampiran', $lampiran_7->hashName());
 
-            $lampiran_8 = $request->file('lampiran_8');
-            $lampiran_8->storeAs('public/lampiran', $lampiran_8->hashName());
+            if ($request->file('lampiran_8')) {
+                $lampiran_8 = $request->file('lampiran_8');
+                $lampiran_8->storeAs('public/lampiran', $lampiran_8->hashName());
+            } else {
+                $lampiran_8 = '';
+            }
 
             $lampiran_9 = $request->file('lampiran_9');
             $lampiran_9->storeAs('public/lampiran', $lampiran_9->hashName());
@@ -169,7 +178,7 @@ class UserController extends Controller
                 'lampiran_5'   =>  $request->lampiran_5->hashName(),
                 'lampiran_6'   =>  $request->lampiran_6->hashName(),
                 'lampiran_7'   =>  $request->lampiran_7->hashName(),
-                'lampiran_8'   =>  $request->lampiran_8->hashName(),
+                'lampiran_8'   =>  $lampiran_8 ? $request->lampiran_8->hashName() : '',
                 'lampiran_9'   =>  $request->lampiran_9->hashName(),
                 'lampiran_10'  =>  $request->lampiran_10->hashName(),
                 'lampiran_11'  =>  $request->lampiran_11->hashName(),

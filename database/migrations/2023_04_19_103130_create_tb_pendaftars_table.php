@@ -25,12 +25,10 @@ return new class extends Migration
             $table->string('lampiran_5');
             $table->string('lampiran_6');
             $table->string('lampiran_7');
-            $table->string('lampiran_8');
+            $table->string('lampiran_8')->nullable();
             $table->string('lampiran_9');
             $table->string('lampiran_10');
             $table->string('lampiran_11');
-            // $table->string('lampiran_12');
-            // $table->string('lampiran_13');
             $table->string('photo');
             $table->string('makalah');
             $table->string('status')->default('0');
