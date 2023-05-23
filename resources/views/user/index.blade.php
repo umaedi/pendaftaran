@@ -16,13 +16,13 @@
 <body class="bg-light">
   <img data-src="{{ asset('assets') }}/img/banner/BANNER-965X250.png" class="img-fluid lazyload" alt="Responsive image">
   <main role="main" class="container">
-    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
+    {{-- <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-primary rounded box-shadow">
       <img class="mr-3" src="{{ asset('assets') }}/img/logo/baznas-tuba.png" alt="" width="55" height="55">
       <div class="lh-100">
         <h6 class="mb-0 text-white lh-100">BAZNAS</h6>
         <small>Kabupaten Tulang Bawang</small>
       </div>
-    </div>
+    </div> --}}
     <div class="row">
       <div class="col-md-8">
         <div class="my-3 p-3 bg-white rounded box-shadow">
@@ -39,7 +39,7 @@
                <div id="collapseZero" class="collapse" aria-labelledby="headingZero" data-parent="#accordion">
                  <div class="card-body">
                    <ul class="list-group">
-                      <li class="list-group-item">1. Undang-Undang Nomor 2 Tahun 2011 tentang Pengelolaan Zakat (Lembaran Negara Republik Indonesia Tahun 2011 Nomor 115, Tambahan Lembaran Negara Republik Indonesia Nomor 5255) </li>
+                      <li class="list-group-item">1. Undang-Undang Nomor 2 Tahun 2011 tentang Pengelolaan Zakat</li>
                       <li class="list-group-item">2. Peraturan Pemerintah Republik Indonesia Nomor 14 Tahun 2014 Tentang Pelaksanaan Undang-Undang Nomor 23 Tahun 2011 Tentang Pengelolaan Zakat
                         </li>
                       <li class="list-group-item">3. Peraturan Badan Amil Zakat Nasional Republik Indonesia Nomor 1 Tahun 2019 Tentang Tata Cara Pengangkatan dan Pembentukan Pimpinan Badan Amil Zakat Nasional Provinsi dan Badan Amil Zakat Nasional Kabupaten Kota.</li>
@@ -127,11 +127,27 @@
                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                  <div class="card-body">
                   <ul class="list-group">
-                    <li class="list-group-item">1. Peserta yang dinyatakan lulus seleksi administrasi akan diumumkan melalui melalui Email masing-masing peserta serta berhak mengikuti tahapan seleksi kompetensi dengan membawa Berkas Administrasi (Asli)</li>
-                    <li class="list-group-item">2. Peserta yang dinyatakan lulus seleksi kompetensi akan diumumkan melalui melalui Email masing-masing peserta serta berhak mengikuti tahapan seleksi wawancara</li>
-                    <li class="list-group-item">3. Peserta yang dinyatakan lulus seleksi wawancara akan ditetapkan dalam Berita Acara Hasil Seleksi (BAHS) dan diumumkan melalui melalui Email masing-masing peserta serta dilaporkan kepada Pj. Bupati Tulang Bawang yang kemudian akan dimintakan pertimbangan kepada BAZNAS RI</li>
-                    <li class="list-group-item">4. BAZNAS RI akan melakukan verifikasi administrasi dan verifikasi faktual (investigasi dan wawancara) setelah dokumen dinyatakan lengkap untuk ditetapkan 5 (lima) orang calon pimpinan BAZNAS Kabupaten Tulang Bawang yang akan diangkat dan dilantik oleh Pj. Bupati Tulang Bawang</li>
-                    <li class="list-group-item">5. Selama proses seleksi, peserta tidak dipungut biaya dan panitia seleksi tidak menanggung biaya yang telah dikeluarkan oleh peserta</li>
+                    <li class="list-group-item">1. Peserta yang dinyatakan lulus seleksi administrasi akan diumumkan melalui 
+                      Website Pemkab Tulang Bawang, Website Kemenag Tulang Bawang, Website
+                      BAZNAS Tulang Bawang dan Email masing-masing peserta yang lulus serta berhak
+                      mengikuti tahapan seleksi kompetensi dengan membawa Laptop atau Handphone
+                      (Hp) Android;
+                      </li>
+                    <li class="list-group-item">2. Peserta yang dinyatakan lulus seleksi kompetensi akan diumumkan melalui
+                      Website Pemkab Tulang Bawang, Website Kemenag Tulang Bawang, Website
+                      BAZNAS Tulang Bawang dan Email masing-masing peserta serta berhak mengikuti
+                      tahapan seleksi wawancara</li>
+                    <li class="list-group-item">3. Peserta yang dinyatakan lulus seleksi wawancara akan ditetapkan dalam Berita
+                      Acara Hasil Seleksi (BAHS) dan diumumkan melalui Website Pemkab Tulang
+                      Bawang, Website Kemenag Tulang Bawang, Website BAZNAS Tulang Bawang dan
+                      Email masing-masing peserta serta dilaporkan kepada Pj. Bupati Tulang Bawang
+                      yang kemudian akan dimintakan pertimbangan kepada BAZNAS RI</li>
+                    <li class="list-group-item">4. BAZNAS RI akan melakukan verifikasi administrasi dan verifikasi faktual (investigasi
+                      dan wawancara) setelah dokumen dinyatakan lengkap untuk ditetapkan 5 (lima)
+                      orang calon pimpinan BAZNAS Kabupaten Tulang Bawang yang akan diangkat dan
+                      dilantik oleh Pj. Bupati Tulang Bawang</li>
+                    <li class="list-group-item">5. Selama proses seleksi, peserta tidak dipungut biaya dan panitia seleksi tidak
+                      menanggung biaya yang telah dikeluarkan oleh peserta</li>
                     <li class="list-group-item">6. Berkas lamaran tidak dikembalikan apabila peserta dinyatakan tidak lulus seleksi</li>
                     <li class="list-group-item">7. Keputusan panitia seleksi bersifat final dan tidak dapat diganggu gugat</li>
                   </ul>
@@ -181,7 +197,7 @@
                 <input type="file" class="form-control" id="lampiran_6" name="lampiran_6">
               </div>
              <div class="form-group mt-3">
-                <label for="lampiran_7">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, beratnggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+                <label for="lampiran_7">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
                 <input type="file" class="form-control" id="lampiran_7" name="lampiran_7">
               </div>
              <div class="form-group mt-3">
