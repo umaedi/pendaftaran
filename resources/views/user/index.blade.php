@@ -70,9 +70,8 @@
                       <li class="list-group-item">11.	Tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan  pidana  penjara  paling singkat 5 (lima) tahun</li>
                       <li class="list-group-item">12.	Tidak merangkap jabatan  sebagai  pengurus  dan/atau pegawai pengelola zakat lain</li>
                       <li class="list-group-item">13.	Berasal dari unsur masyarakat yang meliputi ulama, tenaga profesional, dan tokoh masyarakat Islam</li>
-                      <li class="list-group-item">14.	Jika berasal dari pengawai negeri sipil, harus diberhentikan sementara sebagai negeri sipil sesuai ketentuan peraturan perundang-undangan</li>
-                      <li class="list-group-item">15.	Belum pernah menjabat sebagai Pimpinan BAZNAS Provinsi atau BAZNAS Kabupaten/Kota selama 2 (dua) kali masa jabatan (periode) di daerah yang sama; dan</li>
-                      <li class="list-group-item">16.	Bukan berasal dari unsur panitia seleksi atau sekretariat panitia seleksi</li>
+                      <li class="list-group-item">14.	Belum pernah menjabat sebagai Pimpinan BAZNAS Provinsi atau BAZNAS Kabupaten/Kota selama 2 (dua) kali masa jabatan (periode) di daerah yang sama; dan</li>
+                      <li class="list-group-item">15.	Bukan berasal dari unsur panitia seleksi atau sekretariat panitia seleksi</li>
                     </ul>
                  </div>
                </div>
