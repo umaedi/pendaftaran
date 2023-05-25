@@ -29,7 +29,7 @@
                 <input type="text" class="form-control" id="email" value="{{ $pendaftar->email }}">
             </div>
             <div class="form-group">
-                <label for="no_tlp">No Tlp</label>
+                <label for="no_tlp">No Tlp/WhatsApp</label>
                 <input type="text" class="form-control" id="no_tlp" value="{{ $pendaftar->no_tlp }}">
             </div>
             </div>
@@ -41,11 +41,11 @@
             <div class="card mb-3">
                 <div class="card-body">
                     <div class="form-group mt-3">
-                        <label for="lampiran_1">Surat permohonan menjadi pimpinan BAZNAS Kab. Tuba</label>
+                        <label for="lampiran_1">Surat permohonan menjadi calon pimpinan BAZNAS Kabupaten Tulang Bawang</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_1) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_2">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan di tandatangai diatas matrai Rp. 10.000 (asli)</label>
+                        <label for="lampiran_2">Surat pernyataan bersedia bekerja penuh, bertanggal, bulan, tahun dan ditandatangani diatas materai Rp.10.000 (asli)</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_2) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
@@ -57,7 +57,7 @@
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_4) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_5">Surat keterangan sehat jasmanidan rohani yang dikeluarkan ole Rumah Sakit Pemerintah (asli)</label>
+                        <label for="lampiran_5">Surat keterangan sehat jasmani dan rohani yang dikeluarkan oleh Rumah Sakit Pemerintah (asli)</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_5) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
@@ -65,28 +65,34 @@
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_6) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_7">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, beratnggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+                        <label for="lampiran_7">Surat pernyataan tidak menjadi anggota partai politik dan tidak terlibat dalam kegiatan politik peraktis, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_7) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_8">Surat pernyataan tidak menjadi anggota partai politik atau terlibat dalam politik praktis, beratanggal, bulan, tahun dan ditandatangani diatas matrai Rp. 10.000 (asli)</label>
+                        <label for="lampiran_8">Surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah
+                          terdaftar atau aktif sebagai anggota atau pengurus partai politik, yang
+                          menerangkan bahwa yang bersangkutan sudah tidak aktif lagi sebagai anggota/
+                          pengurus partai politik, bertanggal, bulan, tahun, di Cap dan
+                          ditandatangani (asli)</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_8) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_9">Fotokopi surat keterangan dari pimpinan partai politik bagi calon pimpinan yang pernah terdaftar atau aktif sebagai anggota atau pengurus partai politik</label>
+                        <label for="lampiran_9">Surat keterangan tidak pernah dihukum karena melakukan tindak pidana
+                          kejahatan yang diancam dengan pidana penjara paling singkat 5 (lima) tahun
+                          yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_9) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_10">Suarat keterangan tidak pernah dihukum karena melakukan tindak pidana kejahatan yang diancam dengan pidana kejahatan yang diancam dengan pidana penjara paling singkat 5 tahun (lima) tahun yang dikeluarkan oleh pengadilan negeri setempat (asli)</label>
+                        <label for="lampiran_10">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai
+                          pengelola zakat lain, bertanggal, bulan, tahun dan ditandatangani diatas materai
+                          Rp.10.000 (asli)</label>
                         <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_10) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
-                        <label for="lampiran_11">Surat pernyataan tidak merangkap jabatan sebagai pengurus atau pegawai pengelola zakat lain, bertanggal, bulan tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
+                        <label for="lampiran_11">Surat pernyataan bersedia mengundurkan diri sebagai pengurus atau pegawai
+                          pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan
+                          ditandatangani diatas materai Rp.10.000 (asli)</label>
                         <a href="{{ asset('storage/lampiran'. $pendaftar->lampiran_11) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
-                      </div>
-                     <div class="form-group mt-3">
-                        <label for="lampiran_12">Surat pernyataan bersedia mengundurkan diri sebagai pengurus pegawai pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan ditandatangani diatas matrai Rp.10.000 (asli)</label>
-                        <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_12) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_12">Makalah</label>

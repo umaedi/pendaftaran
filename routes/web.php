@@ -37,6 +37,8 @@ Route::middleware('auth')->prefix('admin')->group(function () {
         Route::post('/pendaftar/tolak/{id}', 'tolak');
     });
 
+    Route::get('/profile', [\App\Http\Controllers\Admin\ProfileController::class, 'index'])->name('admin.profile');
+    Route::post('/profile/update/{id}', [\App\Http\Controllers\Admin\ProfileController::class, 'update'])->name('admin.profile.update');
     Route::get('/destroy', [\App\Http\Controllers\Admin\AuthController::class, 'destroy']);
 
     Route::post('/email/verifikasi', [\App\Http\Controllers\MailController::class, 'verifikasi']);
