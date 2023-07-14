@@ -92,7 +92,7 @@
                         <label for="lampiran_11">Surat pernyataan bersedia mengundurkan diri sebagai pengurus atau pegawai
                           pengelola zakat lain bagi yang sedang menjabat, bertanggal, bulan, tahun dan
                           ditandatangani diatas materai Rp.10.000 (asli)</label>
-                        <a href="{{ asset('storage/lampiran'. $pendaftar->lampiran_11) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
+                        <a href="{{ asset('storage/lampiran/'. $pendaftar->lampiran_11) }}" target="_blank" class="btn btn-primary btn-block">Lihat lampiran</a>
                       </div>
                      <div class="form-group mt-3">
                         <label for="lampiran_12">Makalah</label>

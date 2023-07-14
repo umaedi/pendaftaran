@@ -24,7 +24,7 @@
                     </button>
                     <p class="text-justify pr-5">
                         <em>
-                            <b>Assalamualikum {{ auth()->user()->name }}</b>, apa fokus utama Anda ini?</em
+                            <b>Assalamualikum {{ auth()->user()->name }}</b>, apa fokus utama Anda hari ini?</em
                         >
                     </p>
                 </div>
@@ -145,9 +145,10 @@
             });
         }
 
-        // setInterval(() => {
-        //     loadTable();
-        // }, 10000);
+        function loadPaginate(to) {
+            page = to
+            loadTable();
+        }
 
         function loadingsubmit(state){
             if(state) {
