@@ -17,7 +17,7 @@ Route::get('/login', [\App\Http\Controllers\Admin\AuthController::class, 'index'
 Route::post('/auth/login', [\App\Http\Controllers\Admin\AuthController::class, 'login']);
 
 Route::get('/', function () {
-    return view('user.index');
+    return view('user.closing');
 });
 
 Route::controller(\App\Http\Controllers\UserController::class)->group(function () {
