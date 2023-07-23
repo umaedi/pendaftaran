@@ -138,7 +138,6 @@
               text: "Verifikasi berkas ini?",
               icon: "warning",
               buttons: true,
-              dangerMode: true,
               })
               .then((willDelete) => {
               if (willDelete) {
@@ -150,14 +149,14 @@
 
                 await transAjax(param).then((res) => {
                   emailVerifikasi(res.data);
-                        // swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
-                        //     window.location.href = '/admin/pendaftar/terverifikasi';
-                        // });
+                        swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
+                            window.location.href = '/admin/pendaftar/terverifikasi';
+                        });
                     }).catch((err) => {
                         loadingsubmit(false);
-                    //     swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
-                    //     window.location.href = '/admin/pendaftar';
-                    // });
+                        swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
+                        window.location.href = '/admin/pendaftar';
+                    });
                   });
                 });
               }
