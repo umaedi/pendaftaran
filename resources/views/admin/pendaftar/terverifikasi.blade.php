@@ -25,7 +25,7 @@
                         </select>
                     </div>
                     <div class="col-md-2">
-                        <a href="#" class="form-control btn btn-primary">EXPORT</a>
+                        <a href="/admin/export?status=Pendaftar_Diverifikasi" class="form-control btn btn-primary">EXPORT</a>
                     </div>
                   </div>
                   @include('layouts._loading')

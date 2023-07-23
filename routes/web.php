@@ -42,5 +42,7 @@ Route::middleware('auth')->prefix('admin')->group(function () {
     Route::get('/destroy', [\App\Http\Controllers\Admin\AuthController::class, 'destroy']);
 
     Route::post('/email/verifikasi', [\App\Http\Controllers\MailController::class, 'verifikasi']);
-    Route::post('/email/penolakan', [\App\Http\Controllers\MailController::class, 'penolakan']);
+    // Route::post('/email/penolakan', [\App\Http\Controllers\MailController::class, 'penolakan']);
+
+    Route::get('/export', [\App\Http\Controllers\Admin\ExportController::class, 'index']);
 });

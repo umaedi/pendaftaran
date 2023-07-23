@@ -149,15 +149,15 @@
                       }
 
                 await transAjax(param).then((res) => {
-                  emailVerifikasi('{{ $pendaftar->email }}');
-                        swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
-                            window.location.href = '/admin/pendaftar/terverifikasi';
-                        });
+                  emailVerifikasi(res.data);
+                        // swal({text: res.message, icon: 'success', timer: 3000,}).then(() => {
+                        //     window.location.href = '/admin/pendaftar/terverifikasi';
+                        // });
                     }).catch((err) => {
                         loadingsubmit(false);
-                        swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
-                        window.location.href = '/admin/pendaftar';
-                    });
+                    //     swal({text: err.responseJSON.message, icon: 'error', timer: 3000,}).then(() => {
+                    //     window.location.href = '/admin/pendaftar';
+                    // });
                   });
                 });
               }
@@ -186,13 +186,13 @@
           $('#exampleModal').modal('hide');
         });
 
-        async function emailVerifikasi(email)
+        async function emailVerifikasi(data)
         {
           console.log('mengirim email');
           var param = {
             method: 'POST',
             url: '/admin/email/verifikasi',
-            data: {email: email},
+            data: data
           }
 
           await transAjax(param).then((res) => {

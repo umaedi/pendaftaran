@@ -24,7 +24,9 @@ class PendaftarController extends Controller
 
             return view('admin.dashboard._data_table', $data);
         }
-        return view('admin.pendaftar.index');
+
+        $data['title'] = 'Data List Pendaftar';
+        return view('admin.pendaftar.index', $data);
     }
 
     public function terverifikasi()
@@ -43,7 +45,8 @@ class PendaftarController extends Controller
 
             return view('admin.pendaftar._data_table', $data);
         }
-        return view('admin.pendaftar.terverifikasi');
+        $data['title'] = 'Pendaftar Diverifikasi';
+        return view('admin.pendaftar.terverifikasi', $data);
     }
 
     public function ditolak()
@@ -62,12 +65,14 @@ class PendaftarController extends Controller
 
             return view('admin.pendaftar._data_table', $data);
         }
-        return view('admin.pendaftar.ditolak');
+        $data['title'] = 'Pendaftar Ditolak';
+        return view('admin.pendaftar.ditolak', $data);
     }
 
     public function show($id)
     {
         $data['pendaftar'] = tb_pendaftar::where('id', $id)->first();
+        $data['title'] = 'Detail Pendaftar';
         return view('admin.pendaftar.show', $data);
     }
 
@@ -79,9 +84,16 @@ class PendaftarController extends Controller
             'status'    => '1'
         ]);
 
+        $data['data'] = [
+            'nama'  => $pendaftar->nama_pendaftar,
+            'email' => $pendaftar->email,
+            'no_tlp'    => $pendaftar->no_tlp,
+        ];
+
         return response()->json([
             'success'   => true,
-            'message'   => 'Berkas berhasil di verifikasi'
+            'message'   => 'Berkas berhasil di verifikasi',
+            'data'      => $data
         ]);
     }
 

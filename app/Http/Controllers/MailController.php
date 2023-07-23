@@ -11,7 +11,8 @@ class MailController extends Controller
 {
     public function verifikasi(Request $request)
     {
-        Mail::to($request->email)->send(new SendMail());
+        $data = $request->data;
+        Mail::to($data['email'])->send(new SendMail($data));
     }
 
     public function penolakan(Request $request)

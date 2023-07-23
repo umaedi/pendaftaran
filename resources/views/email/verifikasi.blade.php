@@ -371,58 +371,78 @@
                         <tr>
                             <td class="wrapper">
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                                    <tr>
-                                        <td>
-                                            <h3>Assalamualikum</h3>
-                                            <p>
-                                                Terimakasih sudah mendaftarkan diri Anda untuk menjadi calon pimpinan
-                                                BANZAS Kabupaten Tulang Bawang. Kami sudah menerima dan memverifikasi
-                                                berkas yang Anda kirimkan.
-                                            </p>
-                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                class="btn btn-primary">
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="left">
-                                                            <table role="presentation" border="0" cellpadding="0"
-                                                                cellspacing="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td> <a href="https://api.whatsapp.com/send?phone=6285741492045"
-                                                                                target="_blank">Hubungi Admin</a> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <p>Salam hormat <br>Admin BAZNAS TUBA</p>
-                                        </td>
-                                    </tr>
-                                </table>
+                                    <br>
+                                    <br>
+                                    <h3>Assalamualikum {{ $data['nama'] }}</h3>
+                                    <p>Dengan hormat,</p>
+                                    <br>
+                                    Saya mewakili tim seleksi Calon Pimpinan BAZNAS Kabupaten Tulang Bawang,
+                                    ingin memberitahukan bahwa Anda telah berhasil melewati tahap seleksi
+                                    administrasi.<br><br>
+                                    <p>
+                                        Selamat, Anda telah <b>LULUS</b> pada tahap seleksi
+                                        administrasi
+                                        yang telah diikuti sebelumnya.
+                                    </p>
+                                    Berikut adalah rincian pribadi Anda yang telah terdaftar dalam sistem
+                                    Kami:<br><br>
+                                    <p>
+                                        Nama: {{ $data['nama'] }}<br>
+                                        Email : {{ $data['email'] }}<br>
+                                        No Tlp : {{ $data['no_tlp'] }}
+                                    </p>
+                                    Tahap selanjutnya dari proses seleksi akan mencakup ujian tulis dan
+                                    wawancara. Detail mengenai jadwal, lokasi, serta instruksi lebih lanjut
+                                    akan segera kami informasikan melalui group WhatsApp.<br><br>Silakan gabung
+                                    group WhatsApp dengan menekan tombol dibawah ini.<br><br>
+
+                                    </p>
+                                    <table role="presentation" border="0" cellpadding="0" cellspacing="0"
+                                        class="btn btn-primary">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left">
+                                                    <table role="presentation" border="0" cellpadding="0"
+                                                        cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td> <a href="https://api.whatsapp.com/send?phone=6281273537355"
+                                                                        target="_blank">Gabung Group WhatsApp</a> </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Sekali lagi, selamat atas kelulusan Anda, dan kami berharap melihat
+                                        Anda dalam tahap seleksi berikutnya.</p>
+                                    <p>Hormat Kami <br>Team Seleksi CAPIM BAZNAS Kabupaten Tulang Bawang</p>
                             </td>
                         </tr>
-                        <!-- END MAIN CONTENT AREA -->
                     </table>
-                    <!-- END CENTERED WHITE CONTAINER -->
-
-                    <!-- START FOOTER -->
-                    <div class="footer">
-                        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
-                            <tr>
-                                <td class="content-block">
-                                    <span class="apple-link">Copyright © 2023 BAZNAS TUBA. All rights
-                                        reserved</span>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                    <!-- END FOOTER -->
-                </div>
             </td>
-            <td>&nbsp;</td>
         </tr>
+        <!-- END MAIN CONTENT AREA -->
+    </table>
+    <!-- END CENTERED WHITE CONTAINER -->
+
+    <!-- START FOOTER -->
+    <div class="footer">
+        <table role="presentation" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+                <td class="content-block">
+                    <span class="apple-link">Copyright © 2023 BAZNAS TUBA. All rights
+                        reserved</span>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <!-- END FOOTER -->
+    </div>
+    </td>
+    <td>&nbsp;</td>
+    </tr>
     </table>
 </body>
 
