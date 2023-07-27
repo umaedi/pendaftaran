@@ -373,29 +373,10 @@
                                 <table role="presentation" border="0" cellpadding="0" cellspacing="0">
                                     <tr>
                                         <td>
-                                            <h3>Assalamualikum</h3>
                                             <p>
                                                 {{ $data['ketrangan'] }}
                                             </p>
-                                            <table role="presentation" border="0" cellpadding="0" cellspacing="0"
-                                                class="btn btn-primary">
-                                                <tbody>
-                                                    <tr>
-                                                        <td align="left">
-                                                            <table role="presentation" border="0" cellpadding="0"
-                                                                cellspacing="0">
-                                                                <tbody>
-                                                                    <tr>
-                                                                        <td> <a href="https://api.whatsapp.com/send?phone=6285741492045"
-                                                                                target="_blank">Hubungi Admin</a> </td>
-                                                                    </tr>
-                                                                </tbody>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </tbody>
-                                            </table>
-                                            <p>Salam hormat <br>Admin BAZNAS TUBA</p>
+                                            <p>Hormat Kami <br>Tim Seleksi CAPIM BAZNAS Kabupaten Tulang Bawang</p>
                                         </td>
                                     </tr>
                                 </table>

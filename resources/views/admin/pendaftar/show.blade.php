@@ -118,7 +118,7 @@
         </div>
         <div class="modal-body">
           <div class="form-group">
-            <textarea name="keterangan" class="form-control keterangan" id="exampleFormControlTextarea1" style="height: 90px"></textarea>
+            <textarea name="keterangan" class="form-control keterangan" id="exampleFormControlTextarea1" style="height: 150px"></textarea>
           </div>
         </div>
         <div class="modal-footer">

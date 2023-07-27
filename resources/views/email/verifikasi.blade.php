@@ -376,11 +376,11 @@
                                     <h3>Assalamualikum {{ $data['nama'] }}</h3>
                                     <p>Dengan hormat,</p>
                                     <br>
-                                    Saya mewakili tim seleksi Calon Pimpinan BAZNAS Kabupaten Tulang Bawang,
-                                    ingin memberitahukan bahwa Anda telah berhasil melewati tahap seleksi
+                                    Atas nama tim seleksi Calon Pimpinan BAZNAS Kabupaten Tulang Bawang,
+                                    dengan ini memberitahukan bahwa Anda telah berhasil melewati tahap seleksi
                                     administrasi.<br><br>
                                     <p>
-                                        Selamat, Anda telah <b>LULUS</b> pada tahap seleksi
+                                        Selamat, Anda dinyatakan <b>LULUS</b> pada tahap seleksi
                                         administrasi
                                         yang telah diikuti sebelumnya.
                                     </p>
@@ -391,12 +391,14 @@
                                         Email : {{ $data['email'] }}<br>
                                         No Tlp : {{ $data['no_tlp'] }}
                                     </p>
-                                    Tahap selanjutnya dari proses seleksi akan mencakup ujian tulis dan
-                                    wawancara. Detail mengenai jadwal, lokasi, serta instruksi lebih lanjut
-                                    akan segera kami informasikan melalui group WhatsApp.<br><br>Silakan gabung
-                                    group WhatsApp dengan menekan tombol dibawah ini.<br><br>
-
+                                    Tahap selanjutnya dari proses seleksi akan mencakup ujian Computer Assisted Test
+                                    (CAT) dan
+                                    Wawancara yang akan dilaksanakan pada hari selasa tanggal 01 Agustus 2023 pukul
+                                    08:00 WIB di kantor
+                                    Dinas Komunikasi dan Informatika (DISKOMINFO) Kabupaten Tulang Bawang, JL. Lintas
+                                    Timur komplek perkantoran Mall Pelayanan Publik (MPP) Tiuh Tohou.<br><br>
                                     </p>
+                                    <p>Silakan gabung ke group whatsapp dengan menekan tombol dibawah ini</p>
                                     <table role="presentation" border="0" cellpadding="0" cellspacing="0"
                                         class="btn btn-primary">
                                         <tbody>
@@ -406,7 +408,7 @@
                                                         cellspacing="0">
                                                         <tbody>
                                                             <tr>
-                                                                <td> <a href="https://api.whatsapp.com/send?phone=6281273537355"
+                                                                <td> <a href="https://chat.whatsapp.com/DSCVezv3NlOGWPYXuXslIr"
                                                                         target="_blank">Gabung Group WhatsApp</a> </td>
                                                             </tr>
                                                         </tbody>
@@ -415,9 +417,10 @@
                                             </tr>
                                         </tbody>
                                     </table>
-                                    <p>Sekali lagi, selamat atas kelulusan Anda, dan kami berharap melihat
-                                        Anda dalam tahap seleksi berikutnya.</p>
-                                    <p>Hormat Kami <br>Team Seleksi CAPIM BAZNAS Kabupaten Tulang Bawang</p>
+                                    <p>Catatan : - Peserta Seleksi diharapkan hadir 30 menit sebelum acara dimulai.
+                                        - Pastikan anda memantau email secara aktif untuk mendapatkan informasi terkini.
+                                    </p>
+                                    <p>Hormat Kami <br>Tim Seleksi CAPIM BAZNAS Kabupaten Tulang Bawang</p>
                             </td>
                         </tr>
                     </table>
